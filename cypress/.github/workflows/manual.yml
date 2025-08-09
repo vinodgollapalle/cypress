@@ -1,0 +1,40 @@
+name: Manual Trigger Workflow
+
+on:
+  workflow_dispatch:  # This allows the workflow to be manually triggered
+
+jobs:
+  example-job:
+    runs-on: ubuntu-latest  # You can change this to your preferred runner (Ubuntu, macOS, Windows)
+
+    steps:
+      # Step 1: Checkout the code from the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Set up Node.js (adjust version based on your project)
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+
+      # Step 3: Install project dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Step 4: Run tests (this can be modified depending on your needs)
+      - name: Run Tests
+        run: npm test
+
+      # Optional: Upload test results (screenshots/videos for Cypress, for example)
+      - name: Upload Cypress videos/screenshots
+        uses: actions/upload-artifact@v3
+        with:
+          name: cypress-artifacts
+          path: cypress/videos
+
+
+      # - name: Run Cypress tests
+      #   uses: cypress-io/github-action@v6
+      #   with:
+      #     browser: chrome
