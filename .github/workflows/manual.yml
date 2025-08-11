@@ -34,7 +34,7 @@ jobs:
           path: cypress/videos
 
 
-      # - name: Run Cypress tests
-      #   uses: cypress-io/github-action@v6
-      #   with:
-      #     browser: chrome
+      - name: Run Cypress tests
+        uses: cypress-io/github-action@v6
+        with:
+          browser: chrome
