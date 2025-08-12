@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-08-12T06:53:23.156Z",
+    "end": "2025-08-12T06:53:30.073Z",
+    "duration": 6917,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "06e970b0-dc06-43c1-b604-0f3850ba95ac",
+      "title": "",
+      "fullFile": "cypress\\e2e\\loginpagePOM.cy.js",
+      "file": "cypress\\e2e\\loginpagePOM.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2e3a52e2-e5d4-487a-bcca-1bb91adae9f8",
+          "title": "Login Page Testcase with POM",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "user should login and redirect to secure area",
+              "fullTitle": "Login Page Testcase with POM user should login and redirect to secure area",
+              "timedOut": null,
+              "duration": 3472,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_loginpage.default.enterUsername('practice');\n_loginpage.default.enterPassword('SuperSecretPassword!');\n_loginpage.default.clickLogin();\ncy.url().should('include', '/secure');\ncy.contains('You logged into a secure area!').should('be.visible');",
+              "err": {},
+              "uuid": "fb19b9d7-8826-45af-94d9-59432cd83674",
+              "parentUUID": "2e3a52e2-e5d4-487a-bcca-1bb91adae9f8",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Invalid user login should show error message",
+              "fullTitle": "Login Page Testcase with POM Invalid user login should show error message",
+              "timedOut": null,
+              "duration": 3342,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_loginpage.default.enterUsername('abdcdef');\n_loginpage.default.enterPassword('dfdfdfd');\n_loginpage.default.clickLogin();\ncy.contains('Your username is invalid!').should('be.visible');\ncy.url().should('include', '/login');",
+              "err": {},
+              "uuid": "445a673d-f13c-494b-85fe-4f378137a78b",
+              "parentUUID": "2e3a52e2-e5d4-487a-bcca-1bb91adae9f8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fb19b9d7-8826-45af-94d9-59432cd83674",
+            "445a673d-f13c-494b-85fe-4f378137a78b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6814,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

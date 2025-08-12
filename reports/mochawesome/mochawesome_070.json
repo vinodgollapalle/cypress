@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-08-12T09:35:26.661Z",
+    "end": "2025-08-12T09:35:28.231Z",
+    "duration": 1570,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d7eed700-5349-42cb-8ccd-dba54da89f8d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\dropdown_2b.cy.js",
+      "file": "cypress\\e2e\\dropdown_2b.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7766ce01-80b6-4ca6-9fff-f536ca1fd9d1",
+          "title": "Select \"India\" from the dropdown",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "select India from the country dropdown",
+              "fullTitle": "Select \"India\" from the dropdown select India from the country dropdown",
+              "timedOut": null,
+              "duration": 1527,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Visit the dropdown page\ncy.visit('https://practice.expandtesting.com/dropdown');\n// Select \"India\" from the dropdown by visible text\ncy.get('#country').select('India').should('have.value', 'IN');",
+              "err": {},
+              "uuid": "decea86c-0163-4c17-9855-58b7428239d5",
+              "parentUUID": "7766ce01-80b6-4ca6-9fff-f536ca1fd9d1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "decea86c-0163-4c17-9855-58b7428239d5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1527,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

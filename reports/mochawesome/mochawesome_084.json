@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-08-12T09:36:32.280Z",
+    "end": "2025-08-12T09:36:35.937Z",
+    "duration": 3657,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d7fa24c1-02d5-40eb-8b94-d9f8cec3fc64",
+      "title": "",
+      "fullFile": "cypress\\e2e\\loginwithfixture_1a.cy.js",
+      "file": "cypress\\e2e\\loginwithfixture_1a.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a07f46f4-e4e7-4fd3-85b2-de23b24aa0db",
+          "title": "Login with fixture data",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Logs in using data from user.json",
+              "fullTitle": "Login with fixture data Logs in using data from user.json",
+              "timedOut": null,
+              "duration": 3609,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://practice.expandtesting.com/login');\n// Use fixture data to fill in login form\ncy.get('#username').type(this.userData.username);\ncy.get('#password').type(this.userData.password);\ncy.get('button[type=\"submit\"]').click();\n// Assertion \ncy.url().should('include', '/secure');\ncy.get('#flash').should('be.visible').and('contain.text', 'You logged into a secure area!');",
+              "err": {},
+              "uuid": "7f402d1c-ada8-417b-8490-4da6410d31d0",
+              "parentUUID": "a07f46f4-e4e7-4fd3-85b2-de23b24aa0db",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7f402d1c-ada8-417b-8490-4da6410d31d0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3609,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

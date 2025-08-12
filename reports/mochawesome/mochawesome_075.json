@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-08-12T09:35:44.702Z",
+    "end": "2025-08-12T09:35:44.764Z",
+    "duration": 62,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f1928157-17a1-4b4c-97de-4df8c165c27e",
+      "title": "",
+      "fullFile": "cypress\\e2e\\functionDeclaration.cy.js",
+      "file": "cypress\\e2e\\functionDeclaration.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4fe1eb7e-2e92-45d5-9d54-04928eff7aba",
+          "title": "Logging Example",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Logs the welcome message",
+              "fullTitle": "Logging Example Logs the welcome message",
+              "timedOut": null,
+              "duration": 32,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "logWelcome();",
+              "err": {},
+              "uuid": "dc856505-818b-49d0-8df7-359655f358da",
+              "parentUUID": "4fe1eb7e-2e92-45d5-9d54-04928eff7aba",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "dc856505-818b-49d0-8df7-359655f358da"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 32,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

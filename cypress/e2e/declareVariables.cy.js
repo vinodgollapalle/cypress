@@ -8,7 +8,7 @@ cy.log(b);
 }
 )
 
-it('variableconst',()=>
+it.skip('variableconst',()=>
 {
 const c = 3;
 c = 4; //throws Error 

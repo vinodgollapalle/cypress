@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-08-12T06:52:27.252Z",
+    "end": "2025-08-12T06:52:30.290Z",
+    "duration": 3038,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b3f70643-c431-4ff1-bcf4-edaf8827d581",
+      "title": "",
+      "fullFile": "cypress\\e2e\\dropdownPOM.cy.js",
+      "file": "cypress\\e2e\\dropdownPOM.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "733ec688-63ae-4528-8488-a6163fef3959",
+          "title": "Dropdown Handling Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Should select Option 1 and validate",
+              "fullTitle": "Dropdown Handling Tests Should select Option 1 and validate",
+              "timedOut": null,
+              "duration": 1557,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dropdownPage.selectOption('Option 1');\ndropdownPage.getSelectedOption().should('have.text', 'Option 1');",
+              "err": {},
+              "uuid": "007600b0-6b68-4902-8fbd-f0019a120f13",
+              "parentUUID": "733ec688-63ae-4528-8488-a6163fef3959",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should select Option 2 and validate",
+              "fullTitle": "Dropdown Handling Tests Should select Option 2 and validate",
+              "timedOut": null,
+              "duration": 1383,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "dropdownPage.selectOption('Option 2');\ndropdownPage.getSelectedOption().should('have.text', 'Option 2');",
+              "err": {},
+              "uuid": "59359448-39d5-4c53-bd77-710c53004397",
+              "parentUUID": "733ec688-63ae-4528-8488-a6163fef3959",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "007600b0-6b68-4902-8fbd-f0019a120f13",
+            "59359448-39d5-4c53-bd77-710c53004397"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2940,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

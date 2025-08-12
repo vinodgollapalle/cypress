@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-08-12T06:52:39.232Z",
+    "end": "2025-08-12T06:52:41.771Z",
+    "duration": 2539,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4310b4f7-77af-4151-9537-e321f6f8cbed",
+      "title": "",
+      "fullFile": "cypress\\e2e\\dynamicpagePOM.cy.js",
+      "file": "cypress\\e2e\\dynamicpagePOM.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a7141670-fdc0-421d-b2b9-ba125fdc6d74",
+          "title": "Dynamic Content Validation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should detect dynamic content change after refresh",
+              "fullTitle": "Dynamic Content Validation should detect dynamic content change after refresh",
+              "timedOut": null,
+              "duration": 2503,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('/dynamic-content');\n// Step 1: Get initial content\nlet firstLoadContent = [];\n_dynamicpage.default.getTextBlocks().then($blocks => {\n  $blocks.each((index, el) => {\n    firstLoadContent.push(el.innerText.trim());\n  });\n  // Step 2: Refresh the page\n  cy.reload();\n  // Step 3: Get new content\n  let secondLoadContent = [];\n  _dynamicpage.default.getTextBlocks().then($newBlocks => {\n    $newBlocks.each((index, el) => {\n      secondLoadContent.push(el.innerText.trim());\n    });\n    // Step 4: Compare the content\n    _dynamicpage.default.compareContent(firstLoadContent, secondLoadContent);\n  });\n});",
+              "err": {},
+              "uuid": "2b20ba32-8c13-477c-86e7-6e16ef6a7bd2",
+              "parentUUID": "a7141670-fdc0-421d-b2b9-ba125fdc6d74",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2b20ba32-8c13-477c-86e7-6e16ef6a7bd2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2503,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
