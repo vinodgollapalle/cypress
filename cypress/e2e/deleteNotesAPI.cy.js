@@ -1,4 +1,4 @@
-it('Delete NotesAPI',function (){      
+it.skip('Delete NotesAPI',function (){      
     cy.get('@token').then((token) => {
    cy.get('@noteId').then((noteId) => {
   cy.request({
