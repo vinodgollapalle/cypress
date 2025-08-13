@@ -15,7 +15,7 @@ describe('Registration Form Tests', () => {
     cy.get('button[type=submit]').click()
 
     // Redirect to login and show success message
-    cy.url().should('include', '/register')
+    cy.url().should('include', '/login')
     cy.get('#flash')
       .should('be.visible')
       .and('contain.text', 'Successfully registered, you can log in now.')
