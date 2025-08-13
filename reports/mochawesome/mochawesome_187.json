@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-08-13T04:00:55.710Z",
+    "end": "2025-08-13T04:00:59.334Z",
+    "duration": 3624,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "95bc5284-7977-4826-8723-7ddf60c0b83f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\extractandassertTabledata_6.cy.js",
+      "file": "cypress\\e2e\\extractandassertTabledata_6.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d4cea3bb-9d4e-4df4-8384-d04dcc437ea4",
+          "title": "Find the column index for \"Memory\" and Print each row browser and corresponding memory usage",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Find the column index for \"Memory\"",
+              "fullTitle": "Find the column index for \"Memory\" and Print each row browser and corresponding memory usage Find the column index for \"Memory\"",
+              "timedOut": null,
+              "duration": 3408,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://practice.expandtesting.com/dynamic-table');\ncy.get(\"table.table-striped thead tr th\").then($tr => {\n  let memoryColumnIndex = -1;\n  $tr.each((index, th) => {\n    const tr = th.innerText;\n    if (tr == 'Memory') {\n      memoryColumnIndex = index;\n    }\n  });\n  cy.log('Memory column index: ', memoryColumnIndex);\n  cy.get(\"table.table-striped tbody tr\").each($trow => {\n    const $cells = $trow.find('td');\n    const browserName = $cells.eq(0).text().trim();\n    const memory = $cells.eq(memoryColumnIndex).text();\n    cy.log(browserName, ' Memory:', memory);\n  });\n});",
+              "err": {},
+              "uuid": "6338982f-6e7b-4d5d-8e53-8007a520d7a0",
+              "parentUUID": "d4cea3bb-9d4e-4df4-8384-d04dcc437ea4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6338982f-6e7b-4d5d-8e53-8007a520d7a0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3408,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

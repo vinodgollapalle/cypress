@@ -1,0 +1,90 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-08-13T04:00:21.620Z",
+    "end": "2025-08-13T04:00:22.148Z",
+    "duration": 528,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "812207ea-1b10-47d9-85de-96d03baa0158",
+      "title": "",
+      "fullFile": "cypress\\e2e\\deleteNotesAPI.cy.js",
+      "file": "cypress\\e2e\\deleteNotesAPI.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Delete NotesAPI",
+          "fullTitle": "Delete NotesAPI",
+          "timedOut": null,
+          "duration": 444,
+          "state": "failed",
+          "speed": null,
+          "pass": false,
+          "fail": true,
+          "pending": false,
+          "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\deleteNotesAPI.cy.js\\\\Delete NotesAPI (failed).png\"\n    ]\n  ]\n}",
+          "code": "cy.get('@token').then(token => {\n  cy.get('@noteId').then(noteId => {\n    cy.request({\n      method: 'DELETE',\n      url: `https://practice.expandtesting.com/notes/api/notes/${noteId}`,\n      headers: {\n        'x-auth-token': token\n      },\n      body: noteData\n    }).then(res => {\n      cy.log(res);\n      expect(res.status).to.eq(200);\n      expect(res.body.message).to.eq('Note successfully deleted');\n    });\n  });\n});",
+          "err": {
+            "message": "CypressError: `cy.get()` could not find a registered alias for: `@token`.\nYou have not aliased anything yet.",
+            "estack": "CypressError: `cy.get()` could not find a registered alias for: `@token`.\nYou have not aliased anything yet.\n    at $Cy.aliasNotFoundFor (https://practice.expandtesting.com/__cypress/runner/cypress_runner.js:135777:66)\n    at $Cy.getAlias (https://practice.expandtesting.com/__cypress/runner/cypress_runner.js:135720:12)\n    at <unknown> (https://practice.expandtesting.com/__cypress/runner/cypress_runner.js:135281:21)\n    at Object.subjectFn (https://practice.expandtesting.com/__cypress/runner/cypress_runner.js:147319:16)\n    at $Cy.verifyUpcomingAssertions (https://practice.expandtesting.com/__cypress/runner/cypress_runner.js:146641:31)\n    at onRetry (https://practice.expandtesting.com/__cypress/runner/cypress_runner.js:147310:15)\n    at retryQuery (https://practice.expandtesting.com/__cypress/runner/cypress_runner.js:147323:10)\n    at <unknown> (https://practice.expandtesting.com/__cypress/runner/cypress_runner.js:147476:17)\n    at tryCatcher (https://practice.expandtesting.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (https://practice.expandtesting.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (https://practice.expandtesting.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromiseCtx (https://practice.expandtesting.com/__cypress/runner/cypress_runner.js:1583:10)\n    at _drainQueueStep (https://practice.expandtesting.com/__cypress/runner/cypress_runner.js:2381:12)\n    at _drainQueue (https://practice.expandtesting.com/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (https://practice.expandtesting.com/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (https://practice.expandtesting.com/__cypress/runner/cypress_runner.js:2256:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://cypress/./cypress/e2e/deleteNotesAPI.cy.js:2:7)",
+            "diff": null
+          },
+          "uuid": "f901f397-32b2-4d4c-8c27-974eeb1eaf91",
+          "parentUUID": "812207ea-1b10-47d9-85de-96d03baa0158",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [],
+      "failures": [
+        "f901f397-32b2-4d4c-8c27-974eeb1eaf91"
+      ],
+      "pending": [],
+      "skipped": [],
+      "duration": 444,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
