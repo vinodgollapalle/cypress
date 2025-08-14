@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-08-14T09:01:51.460Z",
+    "end": "2025-08-14T09:01:51.609Z",
+    "duration": 149,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8cc05cbf-899a-4139-ad89-ab8bcbd52cd7",
+      "title": "",
+      "fullFile": "cypress\\e2e\\arrowFunction.cy.js",
+      "file": "cypress\\e2e\\arrowFunction.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3206b67f-a8b8-4ec0-a0a9-efea99c9c5af",
+          "title": "Multiply three Numbers Example",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Multiplies three numbers",
+              "fullTitle": "Multiply three Numbers Example Multiplies three numbers",
+              "timedOut": null,
+              "duration": 62,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const multiplyThreeNumbers = (a, b, c) => a * b * c;\nconst result = multiplyThreeNumbers(4, 6, 8);\ncy.log(`The multiplication of three numbers: ${result}`);",
+              "err": {},
+              "uuid": "890bbe10-ee3c-4a83-b1d8-9a1ecda95f33",
+              "parentUUID": "3206b67f-a8b8-4ec0-a0a9-efea99c9c5af",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "890bbe10-ee3c-4a83-b1d8-9a1ecda95f33"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 62,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "reports/mochawesome"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

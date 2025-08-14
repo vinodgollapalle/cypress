@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-08-14T09:12:12.528Z",
+    "end": "2025-08-14T09:12:23.269Z",
+    "duration": 10741,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f9008cb2-8e15-4a84-b8e4-c4db559ef310",
+      "title": "",
+      "fullFile": "cypress\\e2e\\loginwithfixtureformdata_1b.cy.js",
+      "file": "cypress\\e2e\\loginwithfixtureformdata_1b.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ce65cbbb-1124-4d63-84cb-678b266dfc65",
+          "title": "Login using fixture data",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login with form data from JSON file",
+              "fullTitle": "Login using fixture data Login with form data from JSON file",
+              "timedOut": null,
+              "duration": 10630,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Load fixture\ncy.fixture('formData').then(data => {\n  cy.visit('https://practice.expandtesting.com/login');\n  // Fill in the form\n  cy.get('#username').type(data.username);\n  cy.get('#password').type(data.password);\n  cy.get('button[type=\"submit\"]').click();\n  // Validate login success\n  cy.url().should('include', '/secure');\n  cy.get('#flash').should('be.visible').and('contain.text', 'You logged into a secure area!');\n});",
+              "err": {},
+              "uuid": "8a6ae5f1-fcf2-4ff4-a5d9-694e0663a0d0",
+              "parentUUID": "ce65cbbb-1124-4d63-84cb-678b266dfc65",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8a6ae5f1-fcf2-4ff4-a5d9-694e0663a0d0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10630,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "reports/mochawesome"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

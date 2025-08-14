@@ -1,3 +1,5 @@
+//import LoginPage from '../pages/loginpage'; // adjust path if needed
+
 class LoginPage {
   visit() {
     cy.visit('/login');
@@ -16,5 +18,6 @@ class LoginPage {
   }
 }
 
-export default new LoginPage();
-//export default LoginPage;
+//export default new LoginPage();
+export default LoginPage;
+

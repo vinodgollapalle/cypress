@@ -1,33 +1,3 @@
-// const { defineConfig } = require("cypress");
-
-// module.exports = defineConfig({
-//   e2e: {
-//     setupNodeEvents(on, config) {
-//       // implement node event listeners here
-      
-//     },
-//   },
-//   // cypress.config.js
-
-//   e2e: {
-//     baseUrl: 'https://practice.expandtesting.com/', // replace with your app's URL
-//   },
-// })
-
-// const { defineConfig } = require('cypress');
-
-// module.exports = defineConfig({
-//   e2e: {
-//     reporter: 'mochawesome',
-//     reporterOptions: {
-//       reportDir: 'reports/mochawesome',
-//       overwrite: false,
-//       html: false,
-//       json: true
-//     },
-//   },
-// });
-
 const { defineConfig } = require('cypress');
 
 module.exports = defineConfig({
@@ -40,10 +10,10 @@ module.exports = defineConfig({
 
     reporter: 'mochawesome',
     reporterOptions: {
-      reportDir: 'reports/mochawesome',
       overwrite: false,
       html: false,
       json: true,
+      reportDir: 'reports/mochawesome', 
     },
   },
 });
