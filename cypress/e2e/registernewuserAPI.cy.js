@@ -2,16 +2,16 @@ describe('Register New User using API', () => {
   it('create a new user', () => {
     //const timestamp = Date.now()
     const apidata = {
-      name: "QAtester8",
-      email: "sssf8@abcd.com",
-      password: "QAPassword8"
+      name: "QAtester13",
+      email: "sssf13@abcd.com",
+      password: "QAPassword13"
     }
 
     cy.request({
       method: 'POST',
       url: 'https://practice.expandtesting.com/notes/api/users/register',
       body: apidata,
-      //failOnStatusCode: false // allows manual status check
+      failOnStatusCode: false // allows manual status check
     }).then((res) => {
       cy.log(res)
       // Step 2: Assert response status
