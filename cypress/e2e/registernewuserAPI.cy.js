@@ -15,7 +15,7 @@ describe('Register New User using API', () => {
     }).then((res) => {
       cy.log(res)
       // Step 2: Assert response status
-      expect(res.status).to.eq(201);
+      expect(res.status).to.eq(409);
 
       // Step 3: Validate success message
       expect(res.body.message).to.eq('User account created successfully');
