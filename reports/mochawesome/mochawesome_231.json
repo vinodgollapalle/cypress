@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-08-13T05:11:23.961Z",
+    "end": "2025-08-13T05:11:28.450Z",
+    "duration": 4489,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "82dbfec7-de46-483e-867a-eb066647923a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\assertionsExamples.cy.js",
+      "file": "cypress\\e2e\\assertionsExamples.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "580c4f09-4e22-4eb7-b91f-3253771b8cef",
+          "title": "Assertions Page - Cypress Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should assert element existence, visibility, and text content",
+              "fullTitle": "Assertions Page - Cypress Tests should assert element existence, visibility, and text content",
+              "timedOut": null,
+              "duration": 4192,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://practice.expandtesting.com/#assertions');\n//Assert: Element exists\ncy.get('.btn-warning').should('exist');\n//cy.get('#exist-element') .should('exist');\n// Assert: Element has specific text\ncy.get('.btn-primary').should('have.text', 'Test Cases');\n// Assert: Element is visible\ncy.get('.btn-success').should('be.visible');",
+              "err": {},
+              "uuid": "d2a05bc7-3f94-4cb8-a488-43f1d6d93b4e",
+              "parentUUID": "580c4f09-4e22-4eb7-b91f-3253771b8cef",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d2a05bc7-3f94-4cb8-a488-43f1d6d93b4e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4192,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

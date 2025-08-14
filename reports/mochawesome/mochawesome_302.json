@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-08-14T05:01:48.681Z",
+    "end": "2025-08-14T05:01:51.300Z",
+    "duration": 2619,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d8e86a8d-8b6d-4030-8a5c-47b9477c331d",
+      "title": "",
+      "fullFile": "cypress\\e2e\\fetchAllnotesAPI.cy.js",
+      "file": "cypress\\e2e\\fetchAllnotesAPI.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "20050805-b277-42ab-b4fb-3dc71b2bf1ef",
+          "title": "Fetch All Notes",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "create a new note",
+              "fullTitle": "Fetch All Notes create a new note",
+              "timedOut": null,
+              "duration": 1771,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Step 2: Create a note\ncy.request({\n  method: 'POST',\n  url: 'https://practice.expandtesting.com/notes/api/notes',\n  headers: {\n    'x-auth-token': token,\n    'Content-Type': 'application/json'\n  },\n  body: {\n    title: noteTitle,\n    description: noteDescription,\n    category: 'Personal'\n  }\n}).then(response => {\n  expect(response.status).to.eq(200);\n  createdNoteId = response.body.data.id;\n  expect(createdNoteId).to.exist;\n});",
+              "err": {},
+              "uuid": "c74bef95-6fa8-4186-b675-735cc7f2b0df",
+              "parentUUID": "20050805-b277-42ab-b4fb-3dc71b2bf1ef",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should fetch all notes and contain the newly created note",
+              "fullTitle": "Fetch All Notes should fetch all notes and contain the newly created note",
+              "timedOut": null,
+              "duration": 800,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Step 3: Fetch all notes\ncy.request({\n  method: 'GET',\n  url: 'https://practice.expandtesting.com/notes/api/notes',\n  headers: {\n    'x-auth-token': token\n  }\n}).then(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body).to.have.property('data');\n  expect(response.body.data).to.be.an('array');\n  // Step 4: Assert the created note exists in the array\n  const found = response.body.data.find(note =>\n  //note.id === createdNoteId && note.title === noteTitle\n  note.title === noteTitle && note.description === noteDescription);\n  expect(found, 'Newly created note should be in the list').to.exist;\n});",
+              "err": {},
+              "uuid": "1f70c3dc-53fa-4f78-83ea-7998556c324d",
+              "parentUUID": "20050805-b277-42ab-b4fb-3dc71b2bf1ef",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c74bef95-6fa8-4186-b675-735cc7f2b0df",
+            "1f70c3dc-53fa-4f78-83ea-7998556c324d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2571,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

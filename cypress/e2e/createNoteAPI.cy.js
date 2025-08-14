@@ -6,9 +6,9 @@ describe('Create a Note', () => {
       method: 'POST',
       url: 'https://practice.expandtesting.com/notes/api/users/login',
       body: {
-         name: "QAtester6",
-        email: 'sssf6@abcd.com',
-        password: 'QAPassword6'
+         name: "QAtester9",
+        email: 'sssf9@abcd.com',
+        password: 'QAPassword9'
       }
     }).then((response) => {
       console.log('Login response:', response.body);

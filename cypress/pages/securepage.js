@@ -12,6 +12,6 @@ class SecurePage {
   }
 }
 
-//export default new SecurePage();
-export default SecurePage;
+export default new SecurePage();
+//export default SecurePage;
 

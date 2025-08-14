@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-08-13T05:14:38.582Z",
+    "end": "2025-08-13T05:14:43.639Z",
+    "duration": 5057,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "660c8f43-bc54-4cb7-9509-424e5b5735e0",
+      "title": "",
+      "fullFile": "cypress\\e2e\\scrolldragdrop_3.cy.js",
+      "file": "cypress\\e2e\\scrolldragdrop_3.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "scroll in an element",
+          "fullTitle": "scroll in an element",
+          "timedOut": null,
+          "duration": 3360,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit(\"https://practice.expandtesting.com/scrollbars\");\n//scroll in to an element\n//cy.get(\"[id='search-input']\").type(\"scrollbars\")  \ncy.get('[style=\"height:150px;overflow-y: scroll;width:300px;overflow-x:scroll\"]').click();\ncy.get('#hidingButton').scrollIntoView().click();",
+          "err": {},
+          "uuid": "cb5d740f-7c62-4b1c-a412-e4d6fd474316",
+          "parentUUID": "660c8f43-bc54-4cb7-9509-424e5b5735e0",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Drag and drop",
+          "fullTitle": "Drag and drop",
+          "timedOut": null,
+          "duration": 1623,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "cy.visit(\"https://practice.expandtesting.com/drag-and-drop\");\n// Drag Box A and drop it on Box B\ncy.get('#column-a').drag('#column-b');\n// Optional: assert that they’ve swapped\ncy.get('#column-a header').should('have.text', 'B');\ncy.get('#column-b header').should('have.text', 'A');",
+          "err": {},
+          "uuid": "76fa8af1-8f37-49d5-8f28-e63a7322082e",
+          "parentUUID": "660c8f43-bc54-4cb7-9509-424e5b5735e0",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "cb5d740f-7c62-4b1c-a412-e4d6fd474316",
+        "76fa8af1-8f37-49d5-8f28-e63a7322082e"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 4983,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 1,
+    "failures": 0,
+    "start": "2025-08-13T05:11:53.266Z",
+    "end": "2025-08-13T05:11:53.347Z",
+    "duration": 81,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 50,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "dcec0bc3-89f5-4a20-8837-7534ea8aa401",
+      "title": "",
+      "fullFile": "cypress\\e2e\\declareVariables.cy.js",
+      "file": "cypress\\e2e\\declareVariables.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "38fee072-b010-46e0-ac2e-d6f598d08c32",
+          "title": "variabledeclaration",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "variablelet",
+              "fullTitle": "variabledeclaration variablelet",
+              "timedOut": null,
+              "duration": 37,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let b = 2;\nb = 3;\ncy.log(b);",
+              "err": {},
+              "uuid": "cf7abb4b-a49d-4da7-99ae-9fa6019d21c6",
+              "parentUUID": "38fee072-b010-46e0-ac2e-d6f598d08c32",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "variableconst",
+              "fullTitle": "variabledeclaration variableconst",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "const c = 3;\nc = 4; //throws Error",
+              "err": {},
+              "uuid": "ddf43beb-544e-4625-8234-1d15a2d750c5",
+              "parentUUID": "38fee072-b010-46e0-ac2e-d6f598d08c32",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "cf7abb4b-a49d-4da7-99ae-9fa6019d21c6"
+          ],
+          "failures": [],
+          "pending": [
+            "ddf43beb-544e-4625-8234-1d15a2d750c5"
+          ],
+          "skipped": [],
+          "duration": 37,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

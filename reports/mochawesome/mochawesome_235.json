@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-08-13T05:11:48.346Z",
+    "end": "2025-08-13T05:11:49.409Z",
+    "duration": 1063,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "887b3505-a985-43cd-b5f0-682c1d75aedf",
+      "title": "",
+      "fullFile": "cypress\\e2e\\createNoteAPI.cy.js",
+      "file": "cypress\\e2e\\createNoteAPI.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7c466359-ad18-41ca-9318-20322170ffb9",
+          "title": "Create a Note",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "create a note and return an ID",
+              "fullTitle": "Create a Note create a note and return an ID",
+              "timedOut": null,
+              "duration": 1015,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'POST',\n  url: 'https://practice.expandtesting.com/notes/api/notes',\n  headers: {\n    'x-auth-token': token,\n    'Content-Type': 'application/json'\n  },\n  body: {\n    title: 'Test Note',\n    description: 'This is a test note created through API testing.',\n    category: 'Work'\n  }\n}).then(response => {\n  console.log('Response Body:', response.body);\n  cy.log(JSON.stringify(response.body));\n  // Basic response check\n  expect(response.status).to.eq(200);\n  // Adjust according to the actual structure\n  expect(response.body).to.have.property('data');\n  expect(response.body.data).to.have.property('id');\n  expect(response.body.data.title).to.eq('Test Note');\n});",
+              "err": {},
+              "uuid": "15daa50f-8272-45bb-b4bd-a05035e50ed9",
+              "parentUUID": "7c466359-ad18-41ca-9318-20322170ffb9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "15daa50f-8272-45bb-b4bd-a05035e50ed9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1015,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

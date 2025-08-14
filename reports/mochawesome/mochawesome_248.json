@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-08-13T05:12:34.955Z",
+    "end": "2025-08-13T05:12:35.015Z",
+    "duration": 60,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "51c3bed0-534e-41b0-9156-5752f82b3c6c",
+      "title": "",
+      "fullFile": "cypress\\e2e\\functionswithevenorodd.cy.js",
+      "file": "cypress\\e2e\\functionswithevenorodd.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "88db23f5-95aa-4025-bb21-25c909608271",
+          "title": "OddorEven",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "OddorEven",
+              "fullTitle": "OddorEven OddorEven",
+              "timedOut": null,
+              "duration": 30,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "function evenorodd(number) {\n  if (number % 2 === 0) {\n    cy.log(\"Even\");\n  } else {\n    cy.log(\"Odd\");\n  }\n}\nlet s = evenorodd(6);\ncy.log(s);",
+              "err": {},
+              "uuid": "e7e606b2-17cc-4469-ae9e-a9d58401cf21",
+              "parentUUID": "88db23f5-95aa-4025-bb21-25c909608271",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e7e606b2-17cc-4469-ae9e-a9d58401cf21"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 30,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

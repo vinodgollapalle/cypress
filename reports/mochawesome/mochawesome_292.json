@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2025-08-14T04:59:19.120Z",
+    "end": "2025-08-14T04:59:49.714Z",
+    "duration": 30594,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6cded061-b9d5-46dc-8c41-bf523c098164",
+      "title": "",
+      "fullFile": "cypress\\e2e\\createNoteAPI.cy.js",
+      "file": "cypress\\e2e\\createNoteAPI.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f0cb482a-b0a8-4a6e-9b5a-79f1ec74f134",
+          "title": "Create a Note",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "create a note and return an ID",
+              "fullTitle": "Create a Note create a note and return an ID",
+              "timedOut": null,
+              "duration": 30483,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      \"\\\\createNoteAPI.cy.js\\\\Create a Note -- create a note and return an ID -- before all hook (failed).png\"\n    ]\n  ]\n}",
+              "code": "cy.request({\n  method: 'POST',\n  url: 'https://practice.expandtesting.com/notes/api/notes',\n  headers: {\n    'x-auth-token': token,\n    'Content-Type': 'application/json'\n  },\n  body: {\n    title: 'Test Note',\n    description: 'This is a test note created through API testing.',\n    category: 'Work'\n  }\n}).then(response => {\n  console.log('Response Body:', response.body);\n  cy.log(JSON.stringify(response.body));\n  // Basic response check\n  expect(response.status).to.eq(200);\n  // Adjust according to the actual structure\n  expect(response.body).to.have.property('data');\n  expect(response.body.data).to.have.property('id');\n  expect(response.body.data.title).to.eq('Test Note');\n});",
+              "err": {
+                "message": "CypressError: `cy.request()` timed out waiting `30000ms` for a response from your server.\n\nThe request we sent was:\n\nMethod: POST\nURL: https://practice.expandtesting.com/notes/api/users/login\n\nNo response was received within the timeout.\n\nhttps://on.cypress.io/request\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `Create a Note`",
+                "estack": "CypressError: `cy.request()` timed out waiting `30000ms` for a response from your server.\n\nThe request we sent was:\n\nMethod: POST\nURL: https://practice.expandtesting.com/notes/api/users/login\n\nNo response was received within the timeout.\n\nhttps://on.cypress.io/request\n\nBecause this error occurred during a `before all` hook we are skipping the remaining tests in the current suite: `Create a Note`\n    at <unknown> (https://practice.expandtesting.com/__cypress/runner/cypress_runner.js:136339:70)\n    at tryCatcher (https://practice.expandtesting.com/__cypress/runner/cypress_runner.js:1777:23)\n    at <unknown> (https://practice.expandtesting.com/__cypress/runner/cypress_runner.js:4156:41)\n    at tryCatcher (https://practice.expandtesting.com/__cypress/runner/cypress_runner.js:1777:23)\n    at Promise._settlePromiseFromHandler (https://practice.expandtesting.com/__cypress/runner/cypress_runner.js:1489:31)\n    at Promise._settlePromise (https://practice.expandtesting.com/__cypress/runner/cypress_runner.js:1546:18)\n    at Promise._settlePromise0 (https://practice.expandtesting.com/__cypress/runner/cypress_runner.js:1591:10)\n    at Promise._settlePromises (https://practice.expandtesting.com/__cypress/runner/cypress_runner.js:1667:18)\n    at _drainQueueStep (https://practice.expandtesting.com/__cypress/runner/cypress_runner.js:2377:12)\n    at _drainQueue (https://practice.expandtesting.com/__cypress/runner/cypress_runner.js:2370:9)\n    at Async._drainQueues (https://practice.expandtesting.com/__cypress/runner/cypress_runner.js:2386:5)\n    at Async.drainQueues (https://practice.expandtesting.com/__cypress/runner/cypress_runner.js:2256:14)\nFrom Your Spec Code:\n    at Context.eval (webpack://cypress/./cypress/e2e/createNoteAPI.cy.js:5:7)",
+                "diff": null
+              },
+              "uuid": "abe83aef-948e-4888-9759-3920898ab898",
+              "parentUUID": "f0cb482a-b0a8-4a6e-9b5a-79f1ec74f134",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "abe83aef-948e-4888-9759-3920898ab898"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 30483,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import LoginPage from '../pages/loginpage';
 //import LoginPage from '../pageObjects/loginPage';
 
-const login = new LoginPage(); 
+//const login = new LoginPage(); 
 
 describe('Login Page Testcase with POM', () => {
   beforeEach(() => {

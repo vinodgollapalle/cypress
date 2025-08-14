@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-08-13T05:13:44.896Z",
+    "end": "2025-08-13T05:13:47.947Z",
+    "duration": 3051,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6c4f88d8-7c5f-4459-b6f8-dd9867c076c6",
+      "title": "",
+      "fullFile": "cypress\\e2e\\radiobutton_2c.cy.js",
+      "file": "cypress\\e2e\\radiobutton_2c.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a06a84ce-a205-4fa3-b61c-6baaaa01b36f",
+          "title": "Select Blue radio button",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Select the Blue radio button",
+              "fullTitle": "Select Blue radio button Select the Blue radio button",
+              "timedOut": null,
+              "duration": 2984,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://practice.expandtesting.com/radio-buttons');\n//blue radio button\ncy.get('input#blue').check().should('be.checked');",
+              "err": {},
+              "uuid": "9003bf73-c0b8-413c-a078-6c46e71f835f",
+              "parentUUID": "a06a84ce-a205-4fa3-b61c-6baaaa01b36f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9003bf73-c0b8-413c-a078-6c46e71f835f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2984,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
