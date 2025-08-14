@@ -6,9 +6,10 @@ describe('Create a Note', () => {
       method: 'POST',
       url: 'https://practice.expandtesting.com/notes/api/users/login',
       body: {
-         name: "QAtester13",
-        email: 'sssf13@abcd.com',
-        password: 'QAPassword13'
+         name: "QAtester19",
+        email: 'sssf19@abcd.com',
+        password: 'QAPassword19'
+       
       }
     }).then((response) => {
       console.log('Login response:', response.body);
@@ -16,6 +17,7 @@ describe('Create a Note', () => {
       console.log('Note Creation Response:', response.body);
       token = response.body.data.token; // Adjust based on actual response shape
       expect(token).to.exist;
+      
     });
   });
 it('create a note and return an ID', () => {
@@ -30,6 +32,7 @@ it('create a note and return an ID', () => {
       title: 'Test Note',
       description: 'This is a test note created through API testing.',
       category: 'Work'
+      
     }
   }).then((response) => {
     console.log('Response Body:', response.body);

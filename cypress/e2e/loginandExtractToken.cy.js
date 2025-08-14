@@ -1,8 +1,8 @@
 describe('User Login API and Extract Token', () => {
   const apidata = {
-    name: "QAtester6",
-    email: 'sssf6@abcd.com',
-    password: 'QAPassword6'
+    name: "QAtester18",
+    email: 'sssf18@abcd.com',
+    password: 'QAPassword18'
   };
 
   it('log in and extract the token', () => {

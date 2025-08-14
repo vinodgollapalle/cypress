@@ -12,8 +12,8 @@ describe('Login Page Testcase with POM', () => {
     LoginPage.enterUsername('practice');
     LoginPage.enterPassword('SuperSecretPassword!');
     LoginPage.clickLogin();
-
     cy.url().should('include', '/secure');
+    //cy.url().should('include', '/login');
     cy.contains('You logged into a secure area!').should('be.visible');
   });
 

@@ -2,9 +2,9 @@ describe('Register New User using API', () => {
   it('create a new user', () => {
     //const timestamp = Date.now()
     const apidata = {
-      name: "QAtester13",
-      email: "sssf13@abcd.com",
-      password: "QAPassword13"
+      name: "QAtester19",
+      email: "sssf19@abcd.com",
+      password: "QAPassword19"
     }
 
     cy.request({
@@ -15,7 +15,7 @@ describe('Register New User using API', () => {
     }).then((res) => {
       cy.log(res)
       // Step 2: Assert response status
-      expect(res.status).to.eq(409);
+      expect(res.status).to.eq(201);
 
       // Step 3: Validate success message
       expect(res.body.message).to.eq('User account created successfully');
