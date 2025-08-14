@@ -1,12 +1,14 @@
 import LoginPage from '../pages/loginpage';
 import SecurePage from '../pages/securepage';
 
+
 const loginPage = new LoginPage();
 const securePage = new SecurePage();
 
-describe('Login Page Testcase with POM', () => {
+describe('secure Page Testcase with POM', () => {
   beforeEach(() => {
     loginPage.visit();
+
   });
 
   it('user should login and redirect to secure area', () => {

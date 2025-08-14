@@ -6,11 +6,12 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "test": "cypress run",
-    "merge-reports": "mochawesome-merge reports/mochawesome/*.json > reports/mochawesome/merged-report.json",
-    "generate-report": "marge reports/mochawesome/merged-report.json --reportDir reports/mochawesome --reportFilename mochawesome-report",
-    "test:report": "npm run test && npm run merge-reports && npm run generate-report"
-  },
+  "cypress:run": "cypress run",
+  "merge-reports": "node merge-reports.js",
+  "generate-report": "npx marge reports/merged-report.json --reportDir reports --reportFilename index.html",
+  "test": "npm run cypress:run && npm run merge-reports && npm run generate-report"
+},
+  
   "dependencies": {
     "cypress": "^14.5.0"
   },

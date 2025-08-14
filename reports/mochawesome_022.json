@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-08-14T15:07:01.645Z",
+    "end": "2025-08-14T15:07:17.634Z",
+    "duration": 15989,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9e9895d1-3758-4bf2-a79f-fdc24655d773",
+      "title": "",
+      "fullFile": "cypress\\e2e\\loginandlogoutApplication.cy.js",
+      "file": "cypress\\e2e\\loginandlogoutApplication.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7507df9e-7e7a-4ac5-ac89-ba92d697ecbd",
+          "title": "loginApp",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login to an application with valid credentials",
+              "fullTitle": "loginApp login to an application with valid credentials",
+              "timedOut": null,
+              "duration": 5745,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://practice.expandtesting.com/login\");\n//cy.get('Username: ').contains('practice')\ncy.get('#username').type('practice');\ncy.get('#password').type('SuperSecretPassword!');\ncy.get('button[type=\"submit\"]').click();",
+              "err": {},
+              "uuid": "05be625e-eded-49d7-b701-1f8c739cecff",
+              "parentUUID": "7507df9e-7e7a-4ac5-ac89-ba92d697ecbd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "logout to an application",
+              "fullTitle": "loginApp logout to an application",
+              "timedOut": null,
+              "duration": 10188,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"https://practice.expandtesting.com/login\");\ncy.get('#username').type('practice');\ncy.get('#password').type('SuperSecretPassword!');\ncy.get('button[type=\"submit\"]').click();\ncy.get('i[class=\"icon-2x icon-signout\"]').click();",
+              "err": {},
+              "uuid": "4d43ffc8-c158-4e01-b4b1-399b534d7530",
+              "parentUUID": "7507df9e-7e7a-4ac5-ac89-ba92d697ecbd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "05be625e-eded-49d7-b701-1f8c739cecff",
+            "4d43ffc8-c158-4e01-b4b1-399b534d7530"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 15933,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

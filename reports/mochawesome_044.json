@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-08-14T15:20:58.098Z",
+    "end": "2025-08-14T15:20:59.767Z",
+    "duration": 1669,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "dacc694f-193d-4bec-bbb4-a70f1dd8bab3",
+      "title": "",
+      "fullFile": "cypress\\e2e\\deleteNoteAPI.cy.js",
+      "file": "cypress\\e2e\\deleteNoteAPI.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "19631dbc-667b-4a94-aad6-5fd615615378",
+          "title": "Delete a test note and validate cleanup",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Deletes a note and confirms deletion",
+              "fullTitle": "Delete a test note and validate cleanup Deletes a note and confirms deletion",
+              "timedOut": null,
+              "duration": 1651,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Step 1: DELETE /notes/{id}\ncy.request({\n  method: 'DELETE',\n  url: `${baseUrl}/${noteId}`,\n  headers: {\n    Authorization: `Bearer ${token}`\n  },\n  failOnStatusCode: false\n}).then(response => {\n  // Step 2: Confirm status 204\n  expect(response.status).to.eq(200);\n});\n// Step 3: GET /notes and confirm note is gone\ncy.request({\n  method: 'GET',\n  url: baseUrl,\n  headers: {\n    Authorization: `Bearer ${token}`\n  }\n}).then(response => {\n  expect(response.status).to.eq(200);\n  //  //Validate the noteId no longer exists in the list\n  // const notes = response.body\n  // const found = notes.find(note => note.id === noteId)\n  // expect(found).to.be.undefined\n});",
+              "err": {},
+              "uuid": "fa39ab68-6e71-41d4-b9a1-8618412ac34c",
+              "parentUUID": "19631dbc-667b-4a94-aad6-5fd615615378",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fa39ab68-6e71-41d4-b9a1-8618412ac34c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1651,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

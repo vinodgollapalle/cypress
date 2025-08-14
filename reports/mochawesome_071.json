@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-08-14T15:24:17.310Z",
+    "end": "2025-08-14T15:24:22.209Z",
+    "duration": 4899,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "84f64293-a2a5-4a18-9827-186aeaf5da60",
+      "title": "",
+      "fullFile": "cypress\\e2e\\validateeachbrowsernameandcpu_4.cy.js",
+      "file": "cypress\\e2e\\validateeachbrowsernameandcpu_4.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "594acdaf-4218-453b-ae83-ed36d3842bb5",
+          "title": "Log Each Browsername and its cpu usage",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "use .each() to log each browser name and its CPU usage.",
+              "fullTitle": "Log Each Browsername and its cpu usage use .each() to log each browser name and its CPU usage.",
+              "timedOut": null,
+              "duration": 2550,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://practice.expandtesting.com/dynamic-table');\ncy.get(\"table[class='table table-striped'] tbody tr \").each(($tr, i) => {\n  var _find;\n  const $td = $tr.find('td');\n  const browsername = $td.eq(0).text();\n  const cpuUsage = (_find = [...$td].find(td => td.innerText.includes('%'))) === null || _find === void 0 ? void 0 : _find.innerText;\n  cy.log('Browser Name is ', browsername, 'cpu usage', cpuUsage);\n});",
+              "err": {},
+              "uuid": "42b5e18c-3656-4f40-88c8-f5bc2262eaf2",
+              "parentUUID": "594acdaf-4218-453b-ae83-ed36d3842bb5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Count how many browsers have CPU usage over 20%.",
+              "fullTitle": "Log Each Browsername and its cpu usage Count how many browsers have CPU usage over 20%.",
+              "timedOut": null,
+              "duration": 2252,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "let count = 0;\ncy.visit('https://practice.expandtesting.com/dynamic-table');\ncy.get(\"table[class='table table-striped'] tbody tr \").each(($tr, i) => {\n  var _find2;\n  const $td = $tr.find('td');\n  const browsername = $td.eq(0).text();\n  const cpuUsageText = (_find2 = [...$td].find(td => td.innerText.includes('%'))) === null || _find2 === void 0 ? void 0 : _find2.innerText;\n  if (cpuUsageText) {\n    const cpuValue = parseFloat(cpuUsageText.replace('%', ''));\n    if (cpuValue > 20) {\n      count++;\n    }\n  }\n}).then(() => {\n  cy.log('Total browser count with>20 % is', count);\n});",
+              "err": {},
+              "uuid": "bb63e163-ce14-4cd3-91e5-d3c75257c921",
+              "parentUUID": "594acdaf-4218-453b-ae83-ed36d3842bb5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "42b5e18c-3656-4f40-88c8-f5bc2262eaf2",
+            "bb63e163-ce14-4cd3-91e5-d3c75257c921"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4802,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

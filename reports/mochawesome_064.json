@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-08-14T15:23:21.379Z",
+    "end": "2025-08-14T15:23:22.143Z",
+    "duration": 764,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "dfd2161b-43bd-438a-9df7-fb58c2b6abdd",
+      "title": "",
+      "fullFile": "cypress\\e2e\\registernewuserAPI.cy.js",
+      "file": "cypress\\e2e\\registernewuserAPI.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "edc524cb-7bbc-4074-b43c-d9f8be3d45f3",
+          "title": "Register New User using API",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "create a new user",
+              "fullTitle": "Register New User using API create a new user",
+              "timedOut": null,
+              "duration": 743,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//const timestamp = Date.now()\nconst apidata = {\n  name: \"QAtester28\",\n  email: \"sssf28@abcd.com\",\n  password: \"QAPassword28\"\n};\ncy.request({\n  method: 'POST',\n  url: 'https://practice.expandtesting.com/notes/api/users/register',\n  body: apidata,\n  failOnStatusCode: false // allows manual status check\n}).then(res => {\n  cy.log(res);\n  // Step 2: Assert response status\n  expect(res.status).to.eq(201);\n  // Step 3: Validate success message\n  expect(res.body.message).to.eq('User account created successfully');\n});",
+              "err": {},
+              "uuid": "caa85626-bfb5-49e1-b351-7dc7afeab5ee",
+              "parentUUID": "edc524cb-7bbc-4074-b43c-d9f8be3d45f3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "caa85626-bfb5-49e1-b351-7dc7afeab5ee"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 743,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

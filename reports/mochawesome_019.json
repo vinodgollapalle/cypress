@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-08-14T15:06:36.686Z",
+    "end": "2025-08-14T15:06:50.148Z",
+    "duration": 13462,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "18eb501d-8308-4073-be54-214f03559261",
+      "title": "",
+      "fullFile": "cypress\\e2e\\loginFunctionalityNegative.cy.js",
+      "file": "cypress\\e2e\\loginFunctionalityNegative.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "67c9a337-337f-4bb0-97ff-5225a6871639",
+          "title": "Login Functinality with Negative scenarios",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "invalid username",
+              "fullTitle": "Login Functinality with Negative scenarios invalid username",
+              "timedOut": null,
+              "duration": 7576,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#username').type('testAbcd');\ncy.get('#password').type('SuperSecretPassword!');\ncy.get('button[type=\"submit\"]').click();\n// Assert error message for invalid username\ncy.get('#flash').should('be.visible').and('contain.text', 'Your username is invalid!');",
+              "err": {},
+              "uuid": "0f4db85f-cd66-4d3e-8642-90f16ae98c72",
+              "parentUUID": "67c9a337-337f-4bb0-97ff-5225a6871639",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "invalid password",
+              "fullTitle": "Login Functinality with Negative scenarios invalid password",
+              "timedOut": null,
+              "duration": 5793,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#username').type('practice');\ncy.get('#password').type('cdeef!');\ncy.get('button[type=\"submit\"]').click();\n// Assert error message for invalid password\ncy.get('#flash').should('be.visible').and('contain.text', 'Your password is invalid!');",
+              "err": {},
+              "uuid": "1e3bb58a-fbdd-4c91-a2f0-3c14a2568f8a",
+              "parentUUID": "67c9a337-337f-4bb0-97ff-5225a6871639",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0f4db85f-cd66-4d3e-8642-90f16ae98c72",
+            "1e3bb58a-fbdd-4c91-a2f0-3c14a2568f8a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13369,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

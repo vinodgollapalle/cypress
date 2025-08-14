@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-08-14T15:07:53.568Z",
+    "end": "2025-08-14T15:08:24.719Z",
+    "duration": 31151,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "75891d81-854d-410f-83bb-14a453338ff1",
+      "title": "",
+      "fullFile": "cypress\\e2e\\registrationForm.cy.js",
+      "file": "cypress\\e2e\\registrationForm.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7f8ee377-2b36-4306-9e8e-8c02779a4ed1",
+          "title": "Registration Form Tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": " Registration Page",
+              "fullTitle": "Registration Form Tests  Registration Page",
+              "timedOut": null,
+              "duration": 8799,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#username').type('QATest24');\ncy.get('#password').type('QATest23');\n//cy.get('input#confirmPassword', { timeout: 10000 }).should('be.visible').type('test1234');\ncy.get('#confirmPassword', {\n  timeout: 10000\n}).should('be.visible').type('QATest23');\ncy.get('button[type=submit]').click();\n// Redirect to login and show success message\ncy.url().should('include', '/login');\ncy.get('#flash').should('be.visible').and('contain.text', 'Successfully registered, you can log in now.');",
+              "err": {},
+              "uuid": "c00209e9-ded4-450c-ac66-f852d6691eae",
+              "parentUUID": "7f8ee377-2b36-4306-9e8e-8c02779a4ed1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "username validation",
+              "fullTitle": "Registration Form Tests username validation",
+              "timedOut": null,
+              "duration": 5721,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#password').type('ValidPass');\ncy.get('#confirmPassword').type('ValidPass');\ncy.get('button[type=submit]').click();\ncy.get('#flash').should('be.visible').and('contain.text', 'All fields are required.');",
+              "err": {},
+              "uuid": "2720d24b-1501-426b-b316-8305b24794b8",
+              "parentUUID": "7f8ee377-2b36-4306-9e8e-8c02779a4ed1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Missing Password validation",
+              "fullTitle": "Registration Form Tests Missing Password validation",
+              "timedOut": null,
+              "duration": 9553,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#username').type('test');\ncy.get('#confirmPassword').type('test123');\ncy.get('button[type=submit]').click();\ncy.get('#flash').should('be.visible').and('contain.text', 'All fields are required.');",
+              "err": {},
+              "uuid": "ac2d189e-dd6a-4bec-8867-493761c90dc5",
+              "parentUUID": "7f8ee377-2b36-4306-9e8e-8c02779a4ed1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Non-matching passwords",
+              "fullTitle": "Registration Form Tests Non-matching passwords",
+              "timedOut": null,
+              "duration": 6865,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#username').type('test');\ncy.get('#password').type('test123');\ncy.get('#confirmPassword').type('Mismatch123!');\ncy.get('button[type=submit]').click();\ncy.get('#flash').should('be.visible').and('contain.text', 'Passwords do not match.');",
+              "err": {},
+              "uuid": "371be7ac-3083-45fd-88f8-b3a6900446d2",
+              "parentUUID": "7f8ee377-2b36-4306-9e8e-8c02779a4ed1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c00209e9-ded4-450c-ac66-f852d6691eae",
+            "2720d24b-1501-426b-b316-8305b24794b8",
+            "ac2d189e-dd6a-4bec-8867-493761c90dc5",
+            "371be7ac-3083-45fd-88f8-b3a6900446d2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 30938,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

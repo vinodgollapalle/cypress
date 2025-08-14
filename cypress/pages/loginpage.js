@@ -1,4 +1,24 @@
-//import LoginPage from '../pages/loginpage'; // adjust path if needed
+// //import LoginPage from '../pages/loginpage'; // adjust path if needed
+
+// class LoginPage {
+//   visit() {
+//     cy.visit('/login');
+//   }
+
+//   enterUsername(username) {
+//     cy.get('#username').clear().type(username);
+//   }
+
+//   enterPassword(password) {
+//     cy.get('#password').clear().type(password);
+//   }
+
+//   clickLogin() {
+//     cy.get('button[type="submit"]').click();
+//   }
+// }
+// //export default new LoginPage();
+// export default LoginPage;
 
 class LoginPage {
   visit() {
@@ -6,11 +26,11 @@ class LoginPage {
   }
 
   enterUsername(username) {
-    cy.get('#username').clear().type(username);
+    cy.get('#username').type(username);
   }
 
   enterPassword(password) {
-    cy.get('#password').clear().type(password);
+    cy.get('#password').type(password);
   }
 
   clickLogin() {
@@ -18,6 +38,4 @@ class LoginPage {
   }
 }
 
-//export default new LoginPage();
 export default LoginPage;
-

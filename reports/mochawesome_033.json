@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-08-14T15:10:33.559Z",
+    "end": "2025-08-14T15:10:42.015Z",
+    "duration": 8456,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fce6606a-6c25-40fd-ba4f-d53e585a4f0f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\usePrevSubject.cy.js",
+      "file": "cypress\\e2e\\usePrevSubject.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "67242d47-2184-482e-95af-dee35b098c62",
+          "title": "usePrevSubject",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login using Fillinput",
+              "fullTitle": "usePrevSubject Login using Fillinput",
+              "timedOut": null,
+              "duration": 8406,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Use previous subject\ncy.get('#username').fillinput('practice');\ncy.get('#password').fillinput('SuperSecretPassword!');\ncy.get('#login > .btn').click();\ncy.get('b').should('have.text', 'You logged into a secure area!');",
+              "err": {},
+              "uuid": "3e957e26-1fb8-4531-ab4f-d33f52bfa286",
+              "parentUUID": "67242d47-2184-482e-95af-dee35b098c62",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3e957e26-1fb8-4531-ab4f-d33f52bfa286"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8406,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
