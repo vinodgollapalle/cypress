@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 1,
     "failures": 0,
-    "start": "2025-08-14T15:05:45.628Z",
-    "end": "2025-08-14T15:05:45.686Z",
-    "duration": 58,
+    "start": "2025-08-14T16:05:37.804Z",
+    "end": "2025-08-14T16:05:37.901Z",
+    "duration": 97,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 50,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "e6718093-79b1-412d-b028-5b9cc95b6040",
+      "uuid": "7dc64280-c6ec-49d6-8454-0dc7b8205af4",
       "title": "",
       "fullFile": "cypress\\e2e\\declareVariables.cy.js",
       "file": "cypress\\e2e\\declareVariables.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "083077b2-338f-494f-8d77-294223c63d15",
+          "uuid": "8cf9e903-3adb-4ad9-82f2-99806d8c7d66",
           "title": "variabledeclaration",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "variablelet",
               "fullTitle": "variabledeclaration variablelet",
               "timedOut": null,
-              "duration": 27,
+              "duration": 58,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "let b = 2;\nb = 3;\ncy.log(b);",
               "err": {},
-              "uuid": "2c26c7e1-7d89-4667-b33f-ed5d4b2c66f8",
-              "parentUUID": "083077b2-338f-494f-8d77-294223c63d15",
+              "uuid": "63ea808f-a74f-483a-a1fa-28fb85fc180f",
+              "parentUUID": "8cf9e903-3adb-4ad9-82f2-99806d8c7d66",
               "isHook": false,
               "skipped": false
             },
@@ -65,22 +65,22 @@
               "context": null,
               "code": "const c = 3;\nc = 4; //throws Error",
               "err": {},
-              "uuid": "26161279-639d-4e7e-8e55-8c641bbd4d9f",
-              "parentUUID": "083077b2-338f-494f-8d77-294223c63d15",
+              "uuid": "8dd1a159-5dd2-4f4f-9a9a-55de82f7cce7",
+              "parentUUID": "8cf9e903-3adb-4ad9-82f2-99806d8c7d66",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2c26c7e1-7d89-4667-b33f-ed5d4b2c66f8"
+            "63ea808f-a74f-483a-a1fa-28fb85fc180f"
           ],
           "failures": [],
           "pending": [
-            "26161279-639d-4e7e-8e55-8c641bbd4d9f"
+            "8dd1a159-5dd2-4f4f-9a9a-55de82f7cce7"
           ],
           "skipped": [],
-          "duration": 27,
+          "duration": 58,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

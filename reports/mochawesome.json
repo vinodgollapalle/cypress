@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 1,
     "failures": 0,
-    "start": "2025-08-14T15:05:02.867Z",
-    "end": "2025-08-14T15:05:02.895Z",
-    "duration": 28,
+    "start": "2025-08-14T16:04:45.154Z",
+    "end": "2025-08-14T16:04:45.199Z",
+    "duration": 45,
     "testsRegistered": 1,
     "passPercent": null,
     "pendingPercent": 100,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "a1deab7f-06b1-4601-935e-cc1f22e9b5b9",
+      "uuid": "60d13c55-d540-419e-ad67-72af41b7a94c",
       "title": "",
       "fullFile": "cypress\\e2e\\LoopNumbers.cy.js",
       "file": "cypress\\e2e\\LoopNumbers.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b3971182-12ef-4556-abcf-230dbec042b1",
+          "uuid": "4d00dfc7-7988-45f8-9e0b-de1db963889e",
           "title": "loop Numbers",
           "fullFile": "",
           "file": "",
@@ -47,8 +47,8 @@
               "context": null,
               "code": "for (let i = 1; i <= 10; i++) {\n  if (i % 2 === 0) {\n    cy.log(i);\n  }\n}",
               "err": {},
-              "uuid": "c51ab8e8-e024-4c5c-b0a1-e63b6126d13b",
-              "parentUUID": "b3971182-12ef-4556-abcf-230dbec042b1",
+              "uuid": "f6f91524-3471-44a6-9aad-acbc72c77026",
+              "parentUUID": "4d00dfc7-7988-45f8-9e0b-de1db963889e",
               "isHook": false,
               "skipped": false
             }
@@ -57,7 +57,7 @@
           "passes": [],
           "failures": [],
           "pending": [
-            "c51ab8e8-e024-4c5c-b0a1-e63b6126d13b"
+            "f6f91524-3471-44a6-9aad-acbc72c77026"
           ],
           "skipped": [],
           "duration": 0,

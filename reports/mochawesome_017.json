@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-08-14T15:06:32.092Z",
-    "end": "2025-08-14T15:06:32.157Z",
-    "duration": 65,
+    "start": "2025-08-14T16:06:58.841Z",
+    "end": "2025-08-14T16:06:58.957Z",
+    "duration": 116,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "d497c2ec-1c41-4354-957d-ab72426e587b",
+      "uuid": "18d19828-54af-4f4d-b372-e95e11a7528f",
       "title": "",
       "fullFile": "cypress\\e2e\\functionExpression.cy.js",
       "file": "cypress\\e2e\\functionExpression.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "68b11a94-9439-4155-afe7-c22ed71e3b08",
+          "uuid": "46078289-7541-4f48-a9e4-807aa89596cf",
           "title": "function expression",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Logs user email",
               "fullTitle": "function expression Logs user email",
               "timedOut": null,
-              "duration": 35,
+              "duration": 50,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "const printUserEmail = function (email) {\n  cy.log(` User email: ${email}`);\n};\nprintUserEmail('cypresstesting@com');",
               "err": {},
-              "uuid": "01da1e24-2524-4e85-b4b9-640a625ebf5b",
-              "parentUUID": "68b11a94-9439-4155-afe7-c22ed71e3b08",
+              "uuid": "29fbd8a7-26bb-44ca-91e5-c29e164d8b8d",
+              "parentUUID": "46078289-7541-4f48-a9e4-807aa89596cf",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "01da1e24-2524-4e85-b4b9-640a625ebf5b"
+            "29fbd8a7-26bb-44ca-91e5-c29e164d8b8d"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 35,
+          "duration": 50,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

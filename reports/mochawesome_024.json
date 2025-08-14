@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-08-14T15:07:21.794Z",
-    "end": "2025-08-14T15:07:28.751Z",
-    "duration": 6957,
+    "start": "2025-08-14T16:08:40.576Z",
+    "end": "2025-08-14T16:08:53.571Z",
+    "duration": 12995,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "67ae8dd0-0abd-4b23-8fde-830f443653f5",
+      "uuid": "e5d26e53-e4be-4ed4-981a-c01e45616266",
       "title": "",
       "fullFile": "cypress\\e2e\\loginwithCustomcommands.cy.js",
       "file": "cypress\\e2e\\loginwithCustomcommands.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "c85ac689-228f-464c-bc03-c45182c9a1f2",
+          "uuid": "a54d8c24-de61-480a-b595-e9b7871494c8",
           "title": "Login Application",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "Log in with valid credentials",
               "fullTitle": "Login Application Log in with valid credentials",
               "timedOut": null,
-              "duration": 6918,
+              "duration": 12886,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.login('practice', 'SuperSecretPassword!');\ncy.url().should('include', '/secure');",
               "err": {},
-              "uuid": "446c5ae4-400d-42e4-85cf-5bdd79367bee",
-              "parentUUID": "c85ac689-228f-464c-bc03-c45182c9a1f2",
+              "uuid": "63a5f39e-e17b-44bc-ba7b-a94b43faa511",
+              "parentUUID": "a54d8c24-de61-480a-b595-e9b7871494c8",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "446c5ae4-400d-42e4-85cf-5bdd79367bee"
+            "63a5f39e-e17b-44bc-ba7b-a94b43faa511"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 6918,
+          "duration": 12886,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

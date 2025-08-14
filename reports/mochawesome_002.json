@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-08-14T15:05:08.369Z",
-    "end": "2025-08-14T15:05:19.352Z",
-    "duration": 10983,
+    "start": "2025-08-14T16:04:50.829Z",
+    "end": "2025-08-14T16:05:02.119Z",
+    "duration": 11290,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "2c166e54-d4ec-40c6-8167-cfd14d1441db",
+      "uuid": "aa7b6de4-254d-4046-8c55-4448312d70a7",
       "title": "",
       "fullFile": "cypress\\e2e\\assertionsExamples.cy.js",
       "file": "cypress\\e2e\\assertionsExamples.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "bffd3ef3-0e49-493a-9486-59408556f000",
+          "uuid": "8392c2bf-0910-4398-b1f4-6052efe54e8b",
           "title": "Assertions Page - Cypress Tests",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "should assert element existence, visibility, and text content",
               "fullTitle": "Assertions Page - Cypress Tests should assert element existence, visibility, and text content",
               "timedOut": null,
-              "duration": 10648,
+              "duration": 10989,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit('https://practice.expandtesting.com/#assertions');\n//Assert: Element exists\ncy.get('.btn-warning').should('exist');\n//cy.get('#exist-element') .should('exist');\n// Assert: Element has specific text\ncy.get('.btn-primary').should('have.text', 'Test Cases');\n// Assert: Element is visible\ncy.get('.btn-success').should('be.visible');",
               "err": {},
-              "uuid": "9920a9b7-b5ea-46f5-9565-b70f30acce47",
-              "parentUUID": "bffd3ef3-0e49-493a-9486-59408556f000",
+              "uuid": "32306a7a-3303-4352-bb4c-a5e9e6c4189d",
+              "parentUUID": "8392c2bf-0910-4398-b1f4-6052efe54e8b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "9920a9b7-b5ea-46f5-9565-b70f30acce47"
+            "32306a7a-3303-4352-bb4c-a5e9e6c4189d"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 10648,
+          "duration": 10989,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-08-14T15:05:47.875Z",
-    "end": "2025-08-14T15:05:49.277Z",
-    "duration": 1402,
+    "start": "2025-08-14T16:05:41.148Z",
+    "end": "2025-08-14T16:05:43.596Z",
+    "duration": 2448,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "c7408c2d-4aca-4843-9ee5-27860392e27b",
+      "uuid": "5798be49-28bf-4b43-b881-95217860495d",
       "title": "",
       "fullFile": "cypress\\e2e\\deleteNoteAPI.cy.js",
       "file": "cypress\\e2e\\deleteNoteAPI.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "06b090d2-de39-4718-a0a6-5f75ed63c8b2",
+          "uuid": "ced4e65f-8708-4ba4-9e54-5728c1b64d8b",
           "title": "Delete a test note and validate cleanup",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Deletes a note and confirms deletion",
               "fullTitle": "Delete a test note and validate cleanup Deletes a note and confirms deletion",
               "timedOut": null,
-              "duration": 1365,
+              "duration": 2393,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "// Step 1: DELETE /notes/{id}\ncy.request({\n  method: 'DELETE',\n  url: `${baseUrl}/${noteId}`,\n  headers: {\n    Authorization: `Bearer ${token}`\n  },\n  failOnStatusCode: false\n}).then(response => {\n  // Step 2: Confirm status 204\n  expect(response.status).to.eq(200);\n});\n// Step 3: GET /notes and confirm note is gone\ncy.request({\n  method: 'GET',\n  url: baseUrl,\n  headers: {\n    Authorization: `Bearer ${token}`\n  }\n}).then(response => {\n  expect(response.status).to.eq(200);\n  //  //Validate the noteId no longer exists in the list\n  // const notes = response.body\n  // const found = notes.find(note => note.id === noteId)\n  // expect(found).to.be.undefined\n});",
               "err": {},
-              "uuid": "c2c7380c-1143-4a43-aa84-246b5f1bb57d",
-              "parentUUID": "06b090d2-de39-4718-a0a6-5f75ed63c8b2",
+              "uuid": "7f1f8606-0b91-403d-8d43-8d9d3c3f1b52",
+              "parentUUID": "ced4e65f-8708-4ba4-9e54-5728c1b64d8b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c2c7380c-1143-4a43-aa84-246b5f1bb57d"
+            "7f1f8606-0b91-403d-8d43-8d9d3c3f1b52"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1365,
+          "duration": 2393,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

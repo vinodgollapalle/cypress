@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-08-14T15:06:22.327Z",
-    "end": "2025-08-14T15:06:25.152Z",
-    "duration": 2825,
+    "start": "2025-08-14T16:06:39.443Z",
+    "end": "2025-08-14T16:06:45.391Z",
+    "duration": 5948,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "0669a8d7-3172-44e5-b237-8ce1a8bc0759",
+      "uuid": "1c50d87d-4c7f-43a2-9c60-4d88dc886ba8",
       "title": "",
       "fullFile": "cypress\\e2e\\extractandassertTabledata_6.cy.js",
       "file": "cypress\\e2e\\extractandassertTabledata_6.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "45aa4eb3-97de-4cc6-92dc-8de9b7cd4482",
+          "uuid": "2079c953-8151-44bc-a402-9d8e35276d71",
           "title": "Find the column index for \"Memory\" and Print each row browser and corresponding memory usage",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "Find the column index for \"Memory\"",
               "fullTitle": "Find the column index for \"Memory\" and Print each row browser and corresponding memory usage Find the column index for \"Memory\"",
               "timedOut": null,
-              "duration": 2779,
+              "duration": 5784,
               "state": "passed",
-              "speed": "fast",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.visit('https://practice.expandtesting.com/dynamic-table');\ncy.get(\"table.table-striped thead tr th\").then($tr => {\n  let memoryColumnIndex = -1;\n  $tr.each((index, th) => {\n    const tr = th.innerText;\n    if (tr == 'Memory') {\n      memoryColumnIndex = index;\n    }\n  });\n  cy.log('Memory column index: ', memoryColumnIndex);\n  cy.get(\"table.table-striped tbody tr\").each($trow => {\n    const $cells = $trow.find('td');\n    const browserName = $cells.eq(0).text().trim();\n    const memory = $cells.eq(memoryColumnIndex).text();\n    cy.log(browserName, ' Memory:', memory);\n  });\n});",
               "err": {},
-              "uuid": "bbebab7e-ac41-4c81-957d-6f0b0ab00f74",
-              "parentUUID": "45aa4eb3-97de-4cc6-92dc-8de9b7cd4482",
+              "uuid": "18e81049-e10b-490d-8967-8b1479a97316",
+              "parentUUID": "2079c953-8151-44bc-a402-9d8e35276d71",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "bbebab7e-ac41-4c81-957d-6f0b0ab00f74"
+            "18e81049-e10b-490d-8967-8b1479a97316"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2779,
+          "duration": 5784,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

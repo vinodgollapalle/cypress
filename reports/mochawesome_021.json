@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-08-14T15:06:59.343Z",
-    "end": "2025-08-14T15:07:00.019Z",
-    "duration": 676,
+    "start": "2025-08-14T16:07:44.826Z",
+    "end": "2025-08-14T16:07:46.715Z",
+    "duration": 1889,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "8e864e27-e35b-423c-bdba-041bbab9b6ea",
+      "uuid": "89fcf089-7061-4079-bf52-bc510bd77391",
       "title": "",
       "fullFile": "cypress\\e2e\\loginandExtractToken.cy.js",
       "file": "cypress\\e2e\\loginandExtractToken.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "3e5187b8-b531-48f8-ad25-9c25f50823ab",
+          "uuid": "6b3123d4-4a90-4b61-aac5-1bbaea802d68",
           "title": "User Login API and Extract Token",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "log in and extract the token",
               "fullTitle": "User Login API and Extract Token log in and extract the token",
               "timedOut": null,
-              "duration": 634,
+              "duration": 1828,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.request({\n  method: 'POST',\n  url: 'https://practice.expandtesting.com/notes/api/users/login',\n  body: apidata,\n  failOnStatusCode: false\n}).then(res => {\n  cy.log(res);\n  // Step 3: Assert response status\n  expect(res.status).to.eq(200);\n  // Step 2: Extract and validate token\n  //expect(response.body).to.have.property('token');\n  cy.log(res.body.message);\n  expect(res.body.message).to.eq(\"Login successful\");\n  const token = res.body.data.token;\n  expect(res.body.data.token).to.not.be.null;\n  //cy.log(authToken)\n  // Save token to alias for reuse\n  cy.wrap(token).as('authToken');\n});",
               "err": {},
-              "uuid": "558ca819-53d5-4dbc-9a87-1370f26a03e0",
-              "parentUUID": "3e5187b8-b531-48f8-ad25-9c25f50823ab",
+              "uuid": "1ae23dc2-1c9a-4f53-93a6-a8b7257e500d",
+              "parentUUID": "6b3123d4-4a90-4b61-aac5-1bbaea802d68",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "558ca819-53d5-4dbc-9a87-1370f26a03e0"
+            "1ae23dc2-1c9a-4f53-93a6-a8b7257e500d"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 634,
+          "duration": 1828,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

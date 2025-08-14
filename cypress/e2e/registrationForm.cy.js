@@ -8,10 +8,10 @@ describe('Registration Form Tests', () => {
 )
 
   it(' Registration Page', () => {
-    cy.get('#username').type('QATest27')
-    cy.get('#password').type('QATest26')
+    cy.get('#username').type('QATest28')
+    cy.get('#password').type('QATest27')
     //cy.get('input#confirmPassword', { timeout: 10000 }).should('be.visible').type('test1234');
-    cy.get('#confirmPassword', { timeout: 10000 }).should('be.visible').type('QATest26')
+    cy.get('#confirmPassword', { timeout: 10000 }).should('be.visible').type('QATest27')
     cy.get('button[type=submit]').click()
 
     // Redirect to login and show success message

@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-08-14T15:06:34.353Z",
-    "end": "2025-08-14T15:06:34.412Z",
-    "duration": 59,
+    "start": "2025-08-14T16:07:02.028Z",
+    "end": "2025-08-14T16:07:02.128Z",
+    "duration": 100,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "5a0bf040-b5df-445b-aa3b-af115ea54ec3",
+      "uuid": "87796946-b9d0-4e63-8624-1715431ef5f7",
       "title": "",
       "fullFile": "cypress\\e2e\\functionswithevenorodd.cy.js",
       "file": "cypress\\e2e\\functionswithevenorodd.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "59c16e70-f734-4302-ba1f-7169f01fad65",
+          "uuid": "db77e87a-8b8a-48e8-b9c0-7e1d4701ea0e",
           "title": "OddorEven",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "OddorEven",
               "fullTitle": "OddorEven OddorEven",
               "timedOut": null,
-              "duration": 29,
+              "duration": 51,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "function evenorodd(number) {\n  if (number % 2 === 0) {\n    cy.log(\"Even\");\n  } else {\n    cy.log(\"Odd\");\n  }\n}\nlet s = evenorodd(6);\ncy.log(s);",
               "err": {},
-              "uuid": "89562c1e-c775-4438-9fdc-0f5926154249",
-              "parentUUID": "59c16e70-f734-4302-ba1f-7169f01fad65",
+              "uuid": "265622b9-dafd-43ef-90ad-4b150ba94d58",
+              "parentUUID": "db77e87a-8b8a-48e8-b9c0-7e1d4701ea0e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "89562c1e-c775-4438-9fdc-0f5926154249"
+            "265622b9-dafd-43ef-90ad-4b150ba94d58"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 29,
+          "duration": 51,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

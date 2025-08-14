@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-08-14T15:07:30.313Z",
-    "end": "2025-08-14T15:07:37.204Z",
-    "duration": 6891,
+    "start": "2025-08-14T16:08:56.231Z",
+    "end": "2025-08-14T16:09:13.522Z",
+    "duration": 17291,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "4da75459-25c6-46f3-a31a-a718c08cc40a",
+      "uuid": "4243eaa6-3b42-4026-8dfd-a69543f8b0a9",
       "title": "",
       "fullFile": "cypress\\e2e\\loginwithfixture_1a.cy.js",
       "file": "cypress\\e2e\\loginwithfixture_1a.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "4d4edc69-5652-42c4-a64c-747ff342e346",
+          "uuid": "65e6199e-a421-474e-89ef-29d61fd5906c",
           "title": "Login with fixture data",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "Logs in using data from user.json",
               "fullTitle": "Login with fixture data Logs in using data from user.json",
               "timedOut": null,
-              "duration": 6850,
+              "duration": 17090,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.visit('https://practice.expandtesting.com/login');\n// Use fixture data to fill in login form\ncy.get('#username').type(this.userData.username);\ncy.get('#password').type(this.userData.password);\ncy.get('button[type=\"submit\"]').click();\n// Assertion \ncy.url().should('include', '/secure');\ncy.get('#flash').should('be.visible').and('contain.text', 'You logged into a secure area!');",
               "err": {},
-              "uuid": "d426aef9-a2aa-4c40-ae1a-83f7fb33df45",
-              "parentUUID": "4d4edc69-5652-42c4-a64c-747ff342e346",
+              "uuid": "1e66e0ee-2921-4ce8-8625-173e41f0093d",
+              "parentUUID": "65e6199e-a421-474e-89ef-29d61fd5906c",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "d426aef9-a2aa-4c40-ae1a-83f7fb33df45"
+            "1e66e0ee-2921-4ce8-8625-173e41f0093d"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 6850,
+          "duration": 17090,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

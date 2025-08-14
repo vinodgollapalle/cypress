@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-08-14T15:08:26.301Z",
-    "end": "2025-08-14T15:08:27.536Z",
-    "duration": 1235,
+    "start": "2025-08-14T16:10:34.409Z",
+    "end": "2025-08-14T16:10:37.431Z",
+    "duration": 3022,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "2d9b6f4e-a2ba-4e14-87b8-64755a92a1b1",
+      "uuid": "913e2574-973e-4ecc-abc2-53b9306900dd",
       "title": "",
       "fullFile": "cypress\\e2e\\screateNoteAPI.cy.js",
       "file": "cypress\\e2e\\screateNoteAPI.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "686af31f-de3f-41a8-a42c-9ed8c7a8842f",
+          "uuid": "557dc342-b705-495f-9b90-14dcd718bdbd",
           "title": "Create a Note",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "create a note and return an ID",
               "fullTitle": "Create a Note create a note and return an ID",
               "timedOut": null,
-              "duration": 1207,
+              "duration": 2961,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.request({\n  method: 'POST',\n  url: 'https://practice.expandtesting.com/notes/api/notes',\n  headers: {\n    'x-auth-token': token,\n    'Content-Type': 'application/json'\n  },\n  body: {\n    title: 'Test Note',\n    description: 'This is a test note created through API testing.',\n    category: 'Work'\n  }\n}).then(response => {\n  console.log('Response Body:', response.body);\n  cy.log(JSON.stringify(response.body));\n  // Basic response check\n  expect(response.status).to.eq(200);\n  // Adjust according to the actual structure\n  expect(response.body).to.have.property('data');\n  expect(response.body.data).to.have.property('id');\n  expect(response.body.data.title).to.eq('Test Note');\n});",
               "err": {},
-              "uuid": "54d3003f-d9ef-4f1d-9b2d-905e04194322",
-              "parentUUID": "686af31f-de3f-41a8-a42c-9ed8c7a8842f",
+              "uuid": "4bc93eaa-a99a-4f9c-a0eb-29701bfa3e1c",
+              "parentUUID": "557dc342-b705-495f-9b90-14dcd718bdbd",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "54d3003f-d9ef-4f1d-9b2d-905e04194322"
+            "4bc93eaa-a99a-4f9c-a0eb-29701bfa3e1c"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1207,
+          "duration": 2961,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

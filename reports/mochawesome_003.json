@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-08-14T15:05:21.532Z",
-    "end": "2025-08-14T15:05:30.746Z",
-    "duration": 9214,
+    "start": "2025-08-14T16:05:04.907Z",
+    "end": "2025-08-14T16:05:13.337Z",
+    "duration": 8430,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "5875e4a0-a274-48e9-94f4-43b0911f567c",
+      "uuid": "e485578f-4373-40bd-9d7a-7e6683201bdc",
       "title": "",
       "fullFile": "cypress\\e2e\\checkboxInteractions_2a.cy.js",
       "file": "cypress\\e2e\\checkboxInteractions_2a.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "89c4bc24-d719-4811-a641-219d5f7c21e9",
+          "uuid": "c5e0ee00-77ec-4049-99fb-c1292eaf480c",
           "title": "Checkboxes",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "check and uncheck each checkbox",
               "fullTitle": "Checkboxes check and uncheck each checkbox",
               "timedOut": null,
-              "duration": 9154,
+              "duration": 8341,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit('https://practice.expandtesting.com/checkboxes');\n// Step 2: Locate all checkboxes (assume input[type=\"checkbox\"] is used)\ncy.get('input[type=\"checkbox\"]').each($checkbox => {\n  // Step 3: Check the checkbox\n  cy.wrap($checkbox).check().should('be.checked');\n  // Step 4: Uncheck the checkbox\n  cy.wrap($checkbox).uncheck().should('not.be.checked');\n});",
               "err": {},
-              "uuid": "278fd3ff-991e-41c0-a455-d6bb77a3c99c",
-              "parentUUID": "89c4bc24-d719-4811-a641-219d5f7c21e9",
+              "uuid": "73433910-b602-4862-83fe-fa9b680fc26a",
+              "parentUUID": "c5e0ee00-77ec-4049-99fb-c1292eaf480c",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "278fd3ff-991e-41c0-a455-d6bb77a3c99c"
+            "73433910-b602-4862-83fe-fa9b680fc26a"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 9154,
+          "duration": 8341,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-08-14T15:05:32.739Z",
-    "end": "2025-08-14T15:05:36.955Z",
-    "duration": 4216,
+    "start": "2025-08-14T16:05:15.972Z",
+    "end": "2025-08-14T16:05:24.725Z",
+    "duration": 8753,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "28375819-efbb-4331-b903-81b07da1a846",
+      "uuid": "12ef2086-c5e8-40f7-a690-85de96e6ba1a",
       "title": "",
       "fullFile": "cypress\\e2e\\checkboxPOM.cy.js",
       "file": "cypress\\e2e\\checkboxPOM.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "7de96a77-be2f-4299-9b94-de0f30cdd579",
+          "uuid": "6722a03b-7026-4b75-b7a7-c85fea291ec3",
           "title": "Checkboxes Test with POM",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "Should check the first checkbox and uncheck the second",
               "fullTitle": "Checkboxes Test with POM Should check the first checkbox and uncheck the second",
               "timedOut": null,
-              "duration": 4143,
+              "duration": 8559,
               "state": "passed",
-              "speed": "fast",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "checkboxPage.checkFirstBox();\ncheckboxPage.uncheckSecondBox();\ncheckboxPage.validateCheckboxState([true, false]); // Validate both checkboxes",
               "err": {},
-              "uuid": "7bdba9c4-435d-4972-a84a-81d2f480d53c",
-              "parentUUID": "7de96a77-be2f-4299-9b94-de0f30cdd579",
+              "uuid": "9f84d9be-19dc-4996-b1bf-861c8059b0ad",
+              "parentUUID": "6722a03b-7026-4b75-b7a7-c85fea291ec3",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "7bdba9c4-435d-4972-a84a-81d2f480d53c"
+            "9f84d9be-19dc-4996-b1bf-861c8059b0ad"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 4143,
+          "duration": 8559,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

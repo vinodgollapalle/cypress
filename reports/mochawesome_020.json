@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-08-14T15:06:51.730Z",
-    "end": "2025-08-14T15:06:57.826Z",
-    "duration": 6096,
+    "start": "2025-08-14T16:07:30.401Z",
+    "end": "2025-08-14T16:07:42.184Z",
+    "duration": 11783,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "f8b29e9d-84a0-4cdd-84f7-fb666508991d",
+      "uuid": "32f8ad7d-8afd-4548-8b0a-d51b056036aa",
       "title": "",
       "fullFile": "cypress\\e2e\\loginFunctionalityPositive.cy.js",
       "file": "cypress\\e2e\\loginFunctionalityPositive.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "89ef3262-2987-429e-b04a-29f2deb2dc70",
+          "uuid": "7b5ca339-0a9a-4b0c-bfca-f50b9ab13633",
           "title": "Login Functionality Positive scenarios",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "Login in to application with valid credentials",
               "fullTitle": "Login Functionality Positive scenarios Login in to application with valid credentials",
               "timedOut": null,
-              "duration": 6039,
+              "duration": 11663,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.visit('https://practice.expandtesting.com/login');\ncy.get('#username').type('practice');\ncy.get('#password').type('SuperSecretPassword!');\ncy.get('button[type=\"submit\"]').click();\n//Assert URL\ncy.url().should('include', '/secure');\n//Assert Success Message\ncy.get('#flash').should('be.visible').and('contain.text', 'You logged into a secure area!');\n//Assert Logout Button\ncy.get('a.button.secondary.radius').should('be.visible').and('contain.text', 'Logout');",
               "err": {},
-              "uuid": "4c45e1c8-b7f8-4517-b49e-78abc1bb8b6b",
-              "parentUUID": "89ef3262-2987-429e-b04a-29f2deb2dc70",
+              "uuid": "0b6fc371-6c0d-43ff-8e4e-feaba7a55381",
+              "parentUUID": "7b5ca339-0a9a-4b0c-bfca-f50b9ab13633",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "4c45e1c8-b7f8-4517-b49e-78abc1bb8b6b"
+            "0b6fc371-6c0d-43ff-8e4e-feaba7a55381"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 6039,
+          "duration": 11663,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

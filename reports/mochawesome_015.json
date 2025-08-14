@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2025-08-14T15:06:26.601Z",
-    "end": "2025-08-14T15:06:28.360Z",
-    "duration": 1759,
+    "start": "2025-08-14T16:06:47.990Z",
+    "end": "2025-08-14T16:06:52.829Z",
+    "duration": 4839,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "b981547f-df70-4d59-9472-335e3e54993d",
+      "uuid": "2b7afce7-f11e-44c9-8aeb-651b8661c910",
       "title": "",
       "fullFile": "cypress\\e2e\\fetchAllnotesAPI.cy.js",
       "file": "cypress\\e2e\\fetchAllnotesAPI.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "dc22b74a-892d-45bf-b060-c9fa84697a2b",
+          "uuid": "66e7fba1-664a-4142-a949-c286b1ab0ec9",
           "title": "Fetch All Notes",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "create a new note",
               "fullTitle": "Fetch All Notes create a new note",
               "timedOut": null,
-              "duration": 1191,
+              "duration": 3746,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "// Step 2: Create a note\ncy.request({\n  method: 'POST',\n  url: 'https://practice.expandtesting.com/notes/api/notes',\n  headers: {\n    'x-auth-token': token,\n    'Content-Type': 'application/json'\n  },\n  body: {\n    title: noteTitle,\n    description: noteDescription,\n    category: 'Personal'\n  }\n}).then(response => {\n  expect(response.status).to.eq(200);\n  createdNoteId = response.body.data.id;\n  expect(createdNoteId).to.exist;\n});",
               "err": {},
-              "uuid": "3b42d23e-39e3-44f1-8ea1-18457266278d",
-              "parentUUID": "dc22b74a-892d-45bf-b060-c9fa84697a2b",
+              "uuid": "8dca6dcb-79b9-4b57-93b5-b9c31ef02bd9",
+              "parentUUID": "66e7fba1-664a-4142-a949-c286b1ab0ec9",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "should fetch all notes and contain the newly created note",
               "fullTitle": "Fetch All Notes should fetch all notes and contain the newly created note",
               "timedOut": null,
-              "duration": 537,
+              "duration": 993,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "// Step 3: Fetch all notes\ncy.request({\n  method: 'GET',\n  url: 'https://practice.expandtesting.com/notes/api/notes',\n  headers: {\n    'x-auth-token': token\n  }\n}).then(response => {\n  expect(response.status).to.eq(200);\n  expect(response.body).to.have.property('data');\n  expect(response.body.data).to.be.an('array');\n  // Step 4: Assert the created note exists in the array\n  const found = response.body.data.find(note =>\n  //note.id === createdNoteId && note.title === noteTitle\n  note.title === noteTitle && note.description === noteDescription);\n  expect(found, 'Newly created note should be in the list').to.exist;\n});",
               "err": {},
-              "uuid": "2983173b-aefa-4b23-a403-4983cd28afb6",
-              "parentUUID": "dc22b74a-892d-45bf-b060-c9fa84697a2b",
+              "uuid": "aeaed3be-8413-4246-a65e-0d1f28754a69",
+              "parentUUID": "66e7fba1-664a-4142-a949-c286b1ab0ec9",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "3b42d23e-39e3-44f1-8ea1-18457266278d",
-            "2983173b-aefa-4b23-a403-4983cd28afb6"
+            "8dca6dcb-79b9-4b57-93b5-b9c31ef02bd9",
+            "aeaed3be-8413-4246-a65e-0d1f28754a69"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1728,
+          "duration": 4739,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

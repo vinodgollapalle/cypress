@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-08-14T15:10:33.559Z",
-    "end": "2025-08-14T15:10:42.015Z",
-    "duration": 8456,
+    "start": "2025-08-14T16:11:17.446Z",
+    "end": "2025-08-14T16:11:28.898Z",
+    "duration": 11452,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "fce6606a-6c25-40fd-ba4f-d53e585a4f0f",
+      "uuid": "47334d75-656b-4335-8547-5d7b15bbe43c",
       "title": "",
       "fullFile": "cypress\\e2e\\usePrevSubject.cy.js",
       "file": "cypress\\e2e\\usePrevSubject.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "67242d47-2184-482e-95af-dee35b098c62",
+          "uuid": "529e419c-2e9e-4ea4-9f8a-5e5776f923b4",
           "title": "usePrevSubject",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "Login using Fillinput",
               "fullTitle": "usePrevSubject Login using Fillinput",
               "timedOut": null,
-              "duration": 8406,
+              "duration": 11336,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "//Use previous subject\ncy.get('#username').fillinput('practice');\ncy.get('#password').fillinput('SuperSecretPassword!');\ncy.get('#login > .btn').click();\ncy.get('b').should('have.text', 'You logged into a secure area!');",
               "err": {},
-              "uuid": "3e957e26-1fb8-4531-ab4f-d33f52bfa286",
-              "parentUUID": "67242d47-2184-482e-95af-dee35b098c62",
+              "uuid": "dc4b2108-63c4-420a-bc5a-99c7a777b9b9",
+              "parentUUID": "529e419c-2e9e-4ea4-9f8a-5e5776f923b4",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "3e957e26-1fb8-4531-ab4f-d33f52bfa286"
+            "dc4b2108-63c4-420a-bc5a-99c7a777b9b9"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 8406,
+          "duration": 11336,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

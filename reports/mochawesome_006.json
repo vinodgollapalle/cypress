@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-08-14T15:05:43.398Z",
-    "end": "2025-08-14T15:05:43.498Z",
-    "duration": 100,
+    "start": "2025-08-14T16:05:34.573Z",
+    "end": "2025-08-14T16:05:34.744Z",
+    "duration": 171,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "7bcab895-3b39-4d2b-98ad-2b48b82c0996",
+      "uuid": "1a6d7586-9ec1-47f1-9994-e74d836ffd88",
       "title": "",
       "fullFile": "cypress\\e2e\\dataTypes.cy.js",
       "file": "cypress\\e2e\\dataTypes.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "878b4799-bf4a-4473-818e-393d24fe1696",
+          "uuid": "c4b02eb2-97f4-4423-b99f-75c7b38c2a75",
           "title": "datatypes",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "arraydatatype",
               "fullTitle": "datatypes arraydatatype",
               "timedOut": null,
-              "duration": 71,
+              "duration": 102,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "let numbers = [1, 2, 3, 4, 5];\nlet sum = 0;\nfor (let i = 0; i < numbers.length; i++) {\n  sum += numbers[i];\n  cy.log(\"Sum of the numbers is:\", sum);\n}",
               "err": {},
-              "uuid": "1ba46434-0704-4cfe-a976-6479fcb59857",
-              "parentUUID": "878b4799-bf4a-4473-818e-393d24fe1696",
+              "uuid": "06b8864c-8800-44ee-aab6-0ef64e0286e5",
+              "parentUUID": "c4b02eb2-97f4-4423-b99f-75c7b38c2a75",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "1ba46434-0704-4cfe-a976-6479fcb59857"
+            "06b8864c-8800-44ee-aab6-0ef64e0286e5"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 71,
+          "duration": 102,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-08-14T15:07:46.835Z",
-    "end": "2025-08-14T15:07:49.801Z",
-    "duration": 2966,
+    "start": "2025-08-14T16:09:31.568Z",
+    "end": "2025-08-14T16:09:38.975Z",
+    "duration": 7407,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "a97a8c63-04f9-4f15-bab4-1ca629dedfff",
+      "uuid": "c632ffd9-c964-44ff-a567-eff26a444154",
       "title": "",
       "fullFile": "cypress\\e2e\\radiobutton_2c.cy.js",
       "file": "cypress\\e2e\\radiobutton_2c.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "71517eaa-dbe7-4beb-abbf-f2e0afe06a07",
+          "uuid": "62d1c132-15a8-42dd-b525-c8e131681b8d",
           "title": "Select Blue radio button",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "Select the Blue radio button",
               "fullTitle": "Select Blue radio button Select the Blue radio button",
               "timedOut": null,
-              "duration": 2916,
+              "duration": 7324,
               "state": "passed",
-              "speed": "fast",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.visit('https://practice.expandtesting.com/radio-buttons');\n//blue radio button\ncy.get('input#blue').check().should('be.checked');",
               "err": {},
-              "uuid": "91663168-e7c6-45ca-881c-6cc7818be04d",
-              "parentUUID": "71517eaa-dbe7-4beb-abbf-f2e0afe06a07",
+              "uuid": "e542e80e-a519-4b5c-a87e-ba97b0856c71",
+              "parentUUID": "62d1c132-15a8-42dd-b525-c8e131681b8d",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "91663168-e7c6-45ca-881c-6cc7818be04d"
+            "e542e80e-a519-4b5c-a87e-ba97b0856c71"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2916,
+          "duration": 7324,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

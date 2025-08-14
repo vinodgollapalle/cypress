@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-08-14T15:06:14.973Z",
-    "end": "2025-08-14T15:06:20.717Z",
-    "duration": 5744,
+    "start": "2025-08-14T16:06:27.044Z",
+    "end": "2025-08-14T16:06:36.690Z",
+    "duration": 9646,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "8c63daec-c73a-4d9c-92ec-df2f346ecdac",
+      "uuid": "c8b49c87-12b5-4dad-b628-d9bd5c6871db",
       "title": "",
       "fullFile": "cypress\\e2e\\dynamicpagePOM.cy.js",
       "file": "cypress\\e2e\\dynamicpagePOM.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "3ca42b3b-cf9d-43c6-87a5-cc307b35ac50",
+          "uuid": "0987cd5f-2a3a-4cb7-975e-0f2c8e39ad07",
           "title": "Dynamic Content Validation",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "should detect dynamic content change after refresh",
               "fullTitle": "Dynamic Content Validation should detect dynamic content change after refresh",
               "timedOut": null,
-              "duration": 5694,
+              "duration": 9552,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.visit('/dynamic-content');\n// Step 1: Get initial content\nlet firstLoadContent = [];\n_dynamicpage.default.getTextBlocks().then($blocks => {\n  $blocks.each((index, el) => {\n    firstLoadContent.push(el.innerText.trim());\n  });\n  // Step 2: Refresh the page\n  cy.reload();\n  // Step 3: Get new content\n  let secondLoadContent = [];\n  _dynamicpage.default.getTextBlocks().then($newBlocks => {\n    $newBlocks.each((index, el) => {\n      secondLoadContent.push(el.innerText.trim());\n    });\n    // Step 4: Compare the content\n    _dynamicpage.default.compareContent(firstLoadContent, secondLoadContent);\n  });\n});",
               "err": {},
-              "uuid": "2b7f26fb-0523-43bd-a92e-3c93b78f844a",
-              "parentUUID": "3ca42b3b-cf9d-43c6-87a5-cc307b35ac50",
+              "uuid": "90813074-1d78-46d6-b250-77e872bdf1c9",
+              "parentUUID": "0987cd5f-2a3a-4cb7-975e-0f2c8e39ad07",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "2b7f26fb-0523-43bd-a92e-3c93b78f844a"
+            "90813074-1d78-46d6-b250-77e872bdf1c9"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 5694,
+          "duration": 9552,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

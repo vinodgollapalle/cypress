@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-08-14T15:05:05.351Z",
-    "end": "2025-08-14T15:05:05.455Z",
-    "duration": 104,
+    "start": "2025-08-14T16:04:47.677Z",
+    "end": "2025-08-14T16:04:47.780Z",
+    "duration": 103,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "36ef07cf-7627-42d5-a8ca-e479d7c04737",
+      "uuid": "3c6d5dc4-0b6b-4027-8df1-6b147bfa7375",
       "title": "",
       "fullFile": "cypress\\e2e\\arrowFunction.cy.js",
       "file": "cypress\\e2e\\arrowFunction.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "50f6fdde-b32f-445d-bba2-7413c840e7b6",
+          "uuid": "f91e0d1f-4e05-44b5-a336-f3e9b6057b6a",
           "title": "Multiply three Numbers Example",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Multiplies three numbers",
               "fullTitle": "Multiply three Numbers Example Multiplies three numbers",
               "timedOut": null,
-              "duration": 54,
+              "duration": 55,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "const multiplyThreeNumbers = (a, b, c) => a * b * c;\nconst result = multiplyThreeNumbers(4, 6, 8);\ncy.log(`The multiplication of three numbers: ${result}`);",
               "err": {},
-              "uuid": "180df821-2680-4f49-ab04-24eec92a408f",
-              "parentUUID": "50f6fdde-b32f-445d-bba2-7413c840e7b6",
+              "uuid": "187805ba-55c6-4731-9743-40563f659b10",
+              "parentUUID": "f91e0d1f-4e05-44b5-a336-f3e9b6057b6a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "180df821-2680-4f49-ab04-24eec92a408f"
+            "187805ba-55c6-4731-9743-40563f659b10"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 54,
+          "duration": 55,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

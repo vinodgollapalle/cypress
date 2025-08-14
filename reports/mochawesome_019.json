@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2025-08-14T15:06:36.686Z",
-    "end": "2025-08-14T15:06:50.148Z",
-    "duration": 13462,
+    "start": "2025-08-14T16:07:05.497Z",
+    "end": "2025-08-14T16:07:28.002Z",
+    "duration": 22505,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "18eb501d-8308-4073-be54-214f03559261",
+      "uuid": "f2b56321-dd9e-4371-9d69-db756d6e4bff",
       "title": "",
       "fullFile": "cypress\\e2e\\loginFunctionalityNegative.cy.js",
       "file": "cypress\\e2e\\loginFunctionalityNegative.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "67c9a337-337f-4bb0-97ff-5225a6871639",
+          "uuid": "633b8169-f449-4ce4-ae7e-3e42b21d3dbc",
           "title": "Login Functinality with Negative scenarios",
           "fullFile": "",
           "file": "",
@@ -38,17 +38,17 @@
               "title": "invalid username",
               "fullTitle": "Login Functinality with Negative scenarios invalid username",
               "timedOut": null,
-              "duration": 7576,
+              "duration": 13110,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.get('#username').type('testAbcd');\ncy.get('#password').type('SuperSecretPassword!');\ncy.get('button[type=\"submit\"]').click();\n// Assert error message for invalid username\ncy.get('#flash').should('be.visible').and('contain.text', 'Your username is invalid!');",
               "err": {},
-              "uuid": "0f4db85f-cd66-4d3e-8642-90f16ae98c72",
-              "parentUUID": "67c9a337-337f-4bb0-97ff-5225a6871639",
+              "uuid": "47b68ca8-ed31-4d84-b630-7e89414f3a19",
+              "parentUUID": "633b8169-f449-4ce4-ae7e-3e42b21d3dbc",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "invalid password",
               "fullTitle": "Login Functinality with Negative scenarios invalid password",
               "timedOut": null,
-              "duration": 5793,
+              "duration": 9214,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "cy.get('#username').type('practice');\ncy.get('#password').type('cdeef!');\ncy.get('button[type=\"submit\"]').click();\n// Assert error message for invalid password\ncy.get('#flash').should('be.visible').and('contain.text', 'Your password is invalid!');",
               "err": {},
-              "uuid": "1e3bb58a-fbdd-4c91-a2f0-3c14a2568f8a",
-              "parentUUID": "67c9a337-337f-4bb0-97ff-5225a6871639",
+              "uuid": "4114e187-a72a-419e-83ea-e38e04c13040",
+              "parentUUID": "633b8169-f449-4ce4-ae7e-3e42b21d3dbc",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "0f4db85f-cd66-4d3e-8642-90f16ae98c72",
-            "1e3bb58a-fbdd-4c91-a2f0-3c14a2568f8a"
+            "47b68ca8-ed31-4d84-b630-7e89414f3a19",
+            "4114e187-a72a-419e-83ea-e38e04c13040"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 13369,
+          "duration": 22324,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

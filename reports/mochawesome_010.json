@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2025-08-14T15:05:53.020Z",
-    "end": "2025-08-14T15:06:00.726Z",
-    "duration": 7706,
+    "start": "2025-08-14T16:05:49.383Z",
+    "end": "2025-08-14T16:06:01.212Z",
+    "duration": 11829,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "529a97b5-0e8f-4ed1-ab03-48c63a9489a0",
+      "uuid": "79a29cf0-c788-4dbe-97b7-96a9303ee05b",
       "title": "",
       "fullFile": "cypress\\e2e\\dropdownPOM.cy.js",
       "file": "cypress\\e2e\\dropdownPOM.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "667514aa-eb05-453d-8ddb-78cd817e32ac",
+          "uuid": "186a3b8d-ff6a-4d4a-a74c-17aaff35a465",
           "title": "Dropdown Handling Tests",
           "fullFile": "",
           "file": "",
@@ -38,17 +38,17 @@
               "title": "Should select Option 1 and validate",
               "fullTitle": "Dropdown Handling Tests Should select Option 1 and validate",
               "timedOut": null,
-              "duration": 4202,
+              "duration": 7720,
               "state": "passed",
-              "speed": "fast",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "dropdownPage.selectOption('Option 1');\ndropdownPage.getSelectedOption().should('have.text', 'Option 1');",
               "err": {},
-              "uuid": "cea2502f-049f-4c33-a3f8-8259ea6f7381",
-              "parentUUID": "667514aa-eb05-453d-8ddb-78cd817e32ac",
+              "uuid": "5a84f709-9fc1-4c1a-bfcb-2ed3a9f66ab4",
+              "parentUUID": "186a3b8d-ff6a-4d4a-a74c-17aaff35a465",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Should select Option 2 and validate",
               "fullTitle": "Dropdown Handling Tests Should select Option 2 and validate",
               "timedOut": null,
-              "duration": 3405,
+              "duration": 3878,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "dropdownPage.selectOption('Option 2');\ndropdownPage.getSelectedOption().should('have.text', 'Option 2');",
               "err": {},
-              "uuid": "0f65a336-0754-4125-a6c2-939e0c694a9c",
-              "parentUUID": "667514aa-eb05-453d-8ddb-78cd817e32ac",
+              "uuid": "510f33fb-4eb6-4932-a9c4-7565e2272e7c",
+              "parentUUID": "186a3b8d-ff6a-4d4a-a74c-17aaff35a465",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "cea2502f-049f-4c33-a3f8-8259ea6f7381",
-            "0f65a336-0754-4125-a6c2-939e0c694a9c"
+            "5a84f709-9fc1-4c1a-bfcb-2ed3a9f66ab4",
+            "510f33fb-4eb6-4932-a9c4-7565e2272e7c"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 7607,
+          "duration": 11598,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

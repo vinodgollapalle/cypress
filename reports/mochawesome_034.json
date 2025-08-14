@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-08-14T15:10:43.525Z",
-    "end": "2025-08-14T15:10:46.284Z",
-    "duration": 2759,
+    "start": "2025-08-14T16:11:31.723Z",
+    "end": "2025-08-14T16:11:38.127Z",
+    "duration": 6404,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "8fa49d05-94f7-4c96-8ee8-fa408fd6497a",
+      "uuid": "0110078a-bf1a-4fc9-989d-d2cb9c043bfa",
       "title": "",
       "fullFile": "cypress\\e2e\\validatedynamiccontentTable_5.cy.js",
       "file": "cypress\\e2e\\validatedynamiccontentTable_5.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b2f0dbd5-dda5-4e31-9e49-fbfcbfd52888",
+          "uuid": "b824e6ba-8288-4578-a7df-1ce0628c0d53",
           "title": "Validate Chrome CPU usage matches the label",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "Locate Chrome Row and Compare its CPU value in the table with the yellow label ",
               "fullTitle": "Validate Chrome CPU usage matches the label Locate Chrome Row and Compare its CPU value in the table with the yellow label ",
               "timedOut": null,
-              "duration": 2713,
+              "duration": 6305,
               "state": "passed",
-              "speed": "fast",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.visit('https://practice.expandtesting.com/dynamic-table');\n// Wait until Chrome row appears\ncy.get(\"table.table-striped tbody tr\").each($tr => {\n  const $td = $tr.find('td');\n  const browserName = $td.eq(0).text().trim();\n  if (browserName == 'Chrome') {\n    var _find;\n    const cpuUsageFromTable = (_find = [...$td].find(td => td.innerText.includes('%'))) === null || _find === void 0 ? void 0 : _find.innerText.trim();\n    cy.get('#chrome-cpu').invoke('text').then(fullText => {\n      const match = fullText.match(/(\\d+(\\.\\d+)?%)/);\n      const cpuUsageFromCard = match ? match[0] : null;\n      expect(cpuUsageFromCard).to.eq(cpuUsageFromTable);\n    });\n  }\n});",
               "err": {},
-              "uuid": "72b8b791-05fe-4483-8f7f-942d529e7ee6",
-              "parentUUID": "b2f0dbd5-dda5-4e31-9e49-fbfcbfd52888",
+              "uuid": "cc000d54-2883-460e-82d1-bcb0f028e3d6",
+              "parentUUID": "b824e6ba-8288-4578-a7df-1ce0628c0d53",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "72b8b791-05fe-4483-8f7f-942d529e7ee6"
+            "cc000d54-2883-460e-82d1-bcb0f028e3d6"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2713,
+          "duration": 6305,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

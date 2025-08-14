@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-08-14T15:06:02.253Z",
-    "end": "2025-08-14T15:06:05.405Z",
-    "duration": 3152,
+    "start": "2025-08-14T16:06:03.737Z",
+    "end": "2025-08-14T16:06:09.696Z",
+    "duration": 5959,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "0f13c8b3-4d89-4162-84e3-48e3d81d0cfe",
+      "uuid": "8cc0c550-ebd2-48b8-8a92-81e5bd0cf418",
       "title": "",
       "fullFile": "cypress\\e2e\\dropdown_2b.cy.js",
       "file": "cypress\\e2e\\dropdown_2b.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "78f65c4e-dc36-4620-a0a8-0c98c7b62b99",
+          "uuid": "207a2d80-2236-42db-91ea-3e03ed343115",
           "title": "Select \"India\" from the dropdown",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "select India from the country dropdown",
               "fullTitle": "Select \"India\" from the dropdown select India from the country dropdown",
               "timedOut": null,
-              "duration": 3104,
+              "duration": 5833,
               "state": "passed",
-              "speed": "fast",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "// Visit the dropdown page\ncy.visit('https://practice.expandtesting.com/dropdown');\n// Select \"India\" from the dropdown by visible text\ncy.get('#country').select('India').should('have.value', 'IN');",
               "err": {},
-              "uuid": "ad290606-814f-4218-8243-0ed0b0fb6d3f",
-              "parentUUID": "78f65c4e-dc36-4620-a0a8-0c98c7b62b99",
+              "uuid": "39285b61-596e-41fd-8e72-591952ad4164",
+              "parentUUID": "207a2d80-2236-42db-91ea-3e03ed343115",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ad290606-814f-4218-8243-0ed0b0fb6d3f"
+            "39285b61-596e-41fd-8e72-591952ad4164"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3104,
+          "duration": 5833,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

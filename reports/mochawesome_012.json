@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2025-08-14T15:06:06.909Z",
-    "end": "2025-08-14T15:06:13.436Z",
-    "duration": 6527,
+    "start": "2025-08-14T16:06:12.371Z",
+    "end": "2025-08-14T16:06:24.562Z",
+    "duration": 12191,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "102efed8-2ca9-4597-a19a-230161faef2d",
+      "uuid": "6d4f067c-7399-4f67-974d-9261c88a0a3b",
       "title": "",
       "fullFile": "cypress\\e2e\\dynamicHTMLTable_7.cy.js",
       "file": "cypress\\e2e\\dynamicHTMLTable_7.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "9f3621c3-8f20-4136-8564-cca2b3ceba1b",
+          "uuid": "57644e9d-b99f-4f1e-bbad-1075f903b661",
           "title": "Log browser name and CPU usage on dynamic-table",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Logs browser and CPU usage",
               "fullTitle": "Log browser name and CPU usage on dynamic-table Logs browser and CPU usage",
               "timedOut": null,
-              "duration": 3673,
+              "duration": 4202,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.visit('https://practice.expandtesting.com/dynamic-table');\ncy.get('table.table-striped tbody tr').each(($row, index) => {\n  const browserName = $row.find('td').eq(0).text();\n  const cpuUsage = $row.find('td').eq(2).text();\n  cy.get('table.table-striped tbody tr').should('have.length.at.least', 1);\n  cy.log(`Row ${index + 1}: Browser = ${browserName}, CPU Usage = ${cpuUsage}`);\n  expect(browserName).to.not.be.empty;\n  expect(cpuUsage).to.not.be.empty;\n});",
               "err": {},
-              "uuid": "1e690418-82b0-4165-8295-2114725e3803",
-              "parentUUID": "9f3621c3-8f20-4136-8564-cca2b3ceba1b",
+              "uuid": "e4a0be29-4c72-4cd9-838f-f3dd76c99718",
+              "parentUUID": "57644e9d-b99f-4f1e-bbad-1075f903b661",
               "isHook": false,
               "skipped": false
             },
@@ -56,30 +56,30 @@
               "title": "Assert No cell is empty and Verify at least one browser has CPU usage above 15%",
               "fullTitle": "Log browser name and CPU usage on dynamic-table Assert No cell is empty and Verify at least one browser has CPU usage above 15%",
               "timedOut": null,
-              "duration": 2710,
+              "duration": 7663,
               "state": "passed",
-              "speed": "fast",
+              "speed": "medium",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.visit('https://practice.expandtesting.com/dynamic-table');\nlet cpuAbove15Found = false;\ncy.get(\"table.table-striped tbody tr\").each(($row, rowIndex, $rows) => {\n  const $cells = $row.find('td');\n  const browserName = $cells.eq(0).text().trim(); // 1. Assert browser name is not empty\n  expect(browserName).to.not.be.empty;\n  $cells.each((i, td) => {\n    const cellText = td.innerText;\n    expect(cellText).to.not.be.empty; // 2. Assert no cell is empty\n  });\n  const cpuCell = [...$cells].find(td => td.innerText.includes('%')); // 3. Check if any CPU usage > 15%\n  if (cpuCell) {\n    const cpuValue = parseFloat(cpuCell.innerText.replace('%', ''));\n    if (cpuValue > 15) {\n      cpuAbove15Found = true;\n    }\n  }\n}).then(() => {\n  expect(cpuAbove15Found, \"CPU Usage above 15 not found\").to.be.false; // Final assertion after looping all rows\n});",
               "err": {},
-              "uuid": "48bc9aae-9e5f-4135-9899-575dca5c193b",
-              "parentUUID": "9f3621c3-8f20-4136-8564-cca2b3ceba1b",
+              "uuid": "a05684ae-555b-44d9-afa0-f90671d81af7",
+              "parentUUID": "57644e9d-b99f-4f1e-bbad-1075f903b661",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "1e690418-82b0-4165-8295-2114725e3803",
-            "48bc9aae-9e5f-4135-9899-575dca5c193b"
+            "e4a0be29-4c72-4cd9-838f-f3dd76c99718",
+            "a05684ae-555b-44d9-afa0-f90671d81af7"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 6383,
+          "duration": 11865,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

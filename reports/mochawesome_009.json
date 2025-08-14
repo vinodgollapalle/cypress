@@ -5,9 +5,9 @@
     "passes": 0,
     "pending": 1,
     "failures": 0,
-    "start": "2025-08-14T15:05:50.722Z",
-    "end": "2025-08-14T15:05:50.740Z",
-    "duration": 18,
+    "start": "2025-08-14T16:05:46.018Z",
+    "end": "2025-08-14T16:05:46.043Z",
+    "duration": 25,
     "testsRegistered": 1,
     "passPercent": null,
     "pendingPercent": 100,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "3fdb2c99-d1ad-4207-aa68-b51101d8d5ba",
+      "uuid": "a159e6d6-6982-453c-b7f6-7f452ac93c1f",
       "title": "",
       "fullFile": "cypress\\e2e\\deleteNotesAPI.cy.js",
       "file": "cypress\\e2e\\deleteNotesAPI.cy.js",
@@ -38,8 +38,8 @@
           "context": null,
           "code": "cy.get('@token').then(token => {\n  cy.get('@noteId').then(noteId => {\n    cy.request({\n      method: 'DELETE',\n      url: `https://practice.expandtesting.com/notes/api/notes/${noteId}`,\n      headers: {\n        'x-auth-token': token\n      },\n      body: noteData\n    }).then(res => {\n      cy.log(res);\n      expect(res.status).to.eq(200);\n      expect(res.body.message).to.eq('Note successfully deleted');\n    });\n  });\n});",
           "err": {},
-          "uuid": "0c95f475-66b3-41ac-9418-0a6bc65492b3",
-          "parentUUID": "3fdb2c99-d1ad-4207-aa68-b51101d8d5ba",
+          "uuid": "9f64a585-4019-4973-a052-b5f011e2d04f",
+          "parentUUID": "a159e6d6-6982-453c-b7f6-7f452ac93c1f",
           "isHook": false,
           "skipped": false
         }
@@ -48,7 +48,7 @@
       "passes": [],
       "failures": [],
       "pending": [
-        "0c95f475-66b3-41ac-9418-0a6bc65492b3"
+        "9f64a585-4019-4973-a052-b5f011e2d04f"
       ],
       "skipped": [],
       "duration": 0,

@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-08-14T15:05:38.804Z",
-    "end": "2025-08-14T15:05:41.880Z",
-    "duration": 3076,
+    "start": "2025-08-14T16:05:27.337Z",
+    "end": "2025-08-14T16:05:32.060Z",
+    "duration": 4723,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "abf5a7e7-7eb4-49ed-b2d6-b285c8bb5f19",
+      "uuid": "3c8acc3b-79cb-482e-a850-cf541da28222",
       "title": "",
       "fullFile": "cypress\\e2e\\contextmenuPOM.cy.js",
       "file": "cypress\\e2e\\contextmenuPOM.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "6d30da63-6677-4a38-aca5-7927beb11043",
+          "uuid": "c64b8c37-d9a7-4e00-b810-e6ff35cd5557",
           "title": "Context Menu Interaction Test",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Should right click the box and validate the alert message",
               "fullTitle": "Context Menu Interaction Test Should right click the box and validate the alert message",
               "timedOut": null,
-              "duration": 3025,
+              "duration": 4631,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "contextMenuPage.rightClickBox();\n//cy.get('a[target=\"_blank\"]').invoke('removeAttr', 'target').click();\ncontextMenuPage.handleAlert('You selected a context menu');",
               "err": {},
-              "uuid": "4f1d7148-d281-4288-b8be-1cb2dd33c93b",
-              "parentUUID": "6d30da63-6677-4a38-aca5-7927beb11043",
+              "uuid": "964e0ee9-26e8-4544-a560-ece619059202",
+              "parentUUID": "c64b8c37-d9a7-4e00-b810-e6ff35cd5557",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "4f1d7148-d281-4288-b8be-1cb2dd33c93b"
+            "964e0ee9-26e8-4544-a560-ece619059202"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3025,
+          "duration": 4631,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

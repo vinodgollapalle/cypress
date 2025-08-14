@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-08-14T15:06:29.816Z",
-    "end": "2025-08-14T15:06:29.874Z",
-    "duration": 58,
+    "start": "2025-08-14T16:06:55.512Z",
+    "end": "2025-08-14T16:06:55.598Z",
+    "duration": 86,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "7ce4661f-295c-4af8-8588-9a1627bab860",
+      "uuid": "eaaca156-b174-4ed2-b211-7d8c8f7966af",
       "title": "",
       "fullFile": "cypress\\e2e\\functionDeclaration.cy.js",
       "file": "cypress\\e2e\\functionDeclaration.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "b991a107-6374-457b-a6c8-43297d429087",
+          "uuid": "096c86be-869e-42cb-92a4-2227af66e0bd",
           "title": "Logging Example",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Logs the welcome message",
               "fullTitle": "Logging Example Logs the welcome message",
               "timedOut": null,
-              "duration": 32,
+              "duration": 41,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "logWelcome();",
               "err": {},
-              "uuid": "a6929e9a-1609-46e6-afc5-27301a7934a6",
-              "parentUUID": "b991a107-6374-457b-a6c8-43297d429087",
+              "uuid": "114aa492-7954-4d9c-8e20-84a2c5a84bfb",
+              "parentUUID": "096c86be-869e-42cb-92a4-2227af66e0bd",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a6929e9a-1609-46e6-afc5-27301a7934a6"
+            "114aa492-7954-4d9c-8e20-84a2c5a84bfb"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 32,
+          "duration": 41,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

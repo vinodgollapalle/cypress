@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2025-08-14T15:07:01.645Z",
-    "end": "2025-08-14T15:07:17.634Z",
-    "duration": 15989,
+    "start": "2025-08-14T16:07:49.588Z",
+    "end": "2025-08-14T16:08:14.252Z",
+    "duration": 24664,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "9e9895d1-3758-4bf2-a79f-fdc24655d773",
+      "uuid": "e89b475c-899a-414e-9848-4780c769c0d7",
       "title": "",
       "fullFile": "cypress\\e2e\\loginandlogoutApplication.cy.js",
       "file": "cypress\\e2e\\loginandlogoutApplication.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "7507df9e-7e7a-4ac5-ac89-ba92d697ecbd",
+          "uuid": "8b44ed98-3686-4331-bf1e-8447c916cef3",
           "title": "loginApp",
           "fullFile": "",
           "file": "",
@@ -38,17 +38,17 @@
               "title": "login to an application with valid credentials",
               "fullTitle": "loginApp login to an application with valid credentials",
               "timedOut": null,
-              "duration": 5745,
+              "duration": 13606,
               "state": "passed",
-              "speed": "medium",
+              "speed": "slow",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "cy.visit(\"https://practice.expandtesting.com/login\");\n//cy.get('Username: ').contains('practice')\ncy.get('#username').type('practice');\ncy.get('#password').type('SuperSecretPassword!');\ncy.get('button[type=\"submit\"]').click();",
               "err": {},
-              "uuid": "05be625e-eded-49d7-b701-1f8c739cecff",
-              "parentUUID": "7507df9e-7e7a-4ac5-ac89-ba92d697ecbd",
+              "uuid": "c1254ee3-7ef5-4d37-98be-f5b9f171a076",
+              "parentUUID": "8b44ed98-3686-4331-bf1e-8447c916cef3",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "logout to an application",
               "fullTitle": "loginApp logout to an application",
               "timedOut": null,
-              "duration": 10188,
+              "duration": 10940,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "cy.visit(\"https://practice.expandtesting.com/login\");\ncy.get('#username').type('practice');\ncy.get('#password').type('SuperSecretPassword!');\ncy.get('button[type=\"submit\"]').click();\ncy.get('i[class=\"icon-2x icon-signout\"]').click();",
               "err": {},
-              "uuid": "4d43ffc8-c158-4e01-b4b1-399b534d7530",
-              "parentUUID": "7507df9e-7e7a-4ac5-ac89-ba92d697ecbd",
+              "uuid": "e9cb5298-d595-4e65-a229-697c2740aa0c",
+              "parentUUID": "8b44ed98-3686-4331-bf1e-8447c916cef3",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "05be625e-eded-49d7-b701-1f8c739cecff",
-            "4d43ffc8-c158-4e01-b4b1-399b534d7530"
+            "c1254ee3-7ef5-4d37-98be-f5b9f171a076",
+            "e9cb5298-d595-4e65-a229-697c2740aa0c"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 15933,
+          "duration": 24546,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

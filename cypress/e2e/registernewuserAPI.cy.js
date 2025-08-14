@@ -2,9 +2,9 @@ describe('Register New User using API', () => {
   it('create a new user', () => {
     //const timestamp = Date.now()
     const apidata = {
-      name: "QAtester30",
-      email: "sssf29@abcd.com",
-      password: "QAPassword29"
+      name: "QAtester31",
+      email: "sssf30@abcd.com",
+      password: "QAPassword30"
     }
 
     cy.request({
